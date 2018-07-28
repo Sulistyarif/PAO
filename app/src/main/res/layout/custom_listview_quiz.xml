@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvPertanyaanQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:textColor="#111"
+            android:text="@string/isi_ki1" />
+
+        <RadioGroup
+            android:id="@+id/rgQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rbQuiz1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menut_1"
+                android:textColor="#111"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:id="@+id/rbQuiz2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menut_2"
+                android:textColor="#111"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:id="@+id/rbQuiz3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menut_3"
+                android:textColor="#111"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:id="@+id/rbQuiz4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menut_4"
+                android:textColor="#111"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:id="@+id/rbQuiz5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menut_5"
+                android:textColor="#111"
+                android:textSize="16sp"/>
+
+        </RadioGroup>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

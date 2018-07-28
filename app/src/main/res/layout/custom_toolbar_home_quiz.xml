@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tb"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+
+    <ImageView
+        android:id="@+id/ibBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:padding="10dp"
+        app:srcCompat="@drawable/icon_back" />
+
+    <TextView
+        android:id="@+id/tvHeaderApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:layout_marginStart="5dp"
+        android:textSize="25dp"
+        android:textColor="#111"
+        android:layout_gravity="center"
+        android:text="@string/menut_6" />
+
+    <ImageView
+        android:id="@+id/ibHome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_weight="2"
+        app:srcCompat="@drawable/icon_home" />
+
+    <ImageView
+        android:id="@+id/ivCentang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:padding="10dp"
+        app:srcCompat="@drawable/icon_centang" />
+
+
+</android.widget.LinearLayout>

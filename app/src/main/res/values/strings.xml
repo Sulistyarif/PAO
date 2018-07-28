@@ -1,0 +1,236 @@
+<resources>
+    <string name="app_name">e-MiKE</string>
+
+    <!--splash screen-->
+    <string name="splash_screen_tv">e-MiKE</string>
+    <string name="splash_screen_tv_explain">E-Modul Mesin Konversi Energi</string>
+
+    <!--menu utama (menut)-->
+    <string name="menut_1">KI/KD</string>
+    <string name="menut_2">Materi</string>
+    <string name="menut_3">Video</string>
+    <string name="menut_4">Quiz</string>
+    <string name="menut_5">Glossarium</string>
+    <string name="menut_6">Tentang</string>
+
+    <!--KI KD -->
+    <string name="tv_judul_kikd">Kompetensi Inti dan Kompetensi Dasar</string>
+    <string name="header_ki">Kompetensi Inti</string>
+    <string name="header_ki1">KI 1 (Aspek Kompetensi Sikap Spiritual)</string>
+    <string name="header_ki2">KI 2 (Sikap Sosial)</string>
+    <string name="header_ki3">KI 3 (Pengetahuan)</string>
+    <string name="header_ki4">KI 4 (Keterampilan)</string>
+    <string name="isi_ki1">Menghargai dan menghayati ajaran agama yang dianutnya.</string>
+    <string name="isi_ki2">Menghargai dan menghayati perilaku jujur, disiplin, tanggungjawab, peduli (toleransi, gotong royong), santun, percaya diri, dalam berinteraksi secara efektif dengan lingkungan sosial dan alam dalam jangkauan pergaulan dan keberadaannya.</string>
+    <string name="isi_ki3">Memahami, menerapkan dan menganalisis pengetahuan faktual, konseptual, dan prosedural berdasarkan rasa ingin tahunya tentang ilmu pengetahuan, teknologi, seni, budaya, dan humaniora dalam wawasan kemanusiaan, kebangsaan, kenegaraan, dan peradaban terkait penyebab fenomena dan kejadian dalam bidang kerja yang spesifik untuk memecahkan masalah.</string>
+    <string name="isi_ki4">Mengolah, menalar, dan menyaji dalam ranah konkret dan ranah abstrak  terkait dengan pengembangan dari yang dipelajarinya di sekolah secara mandiri, dan mampu melaksanakan tugas spesifik di bawah pengawasan langsung.</string>
+    <string name="header_kd">Kompetensi Dasar</string>
+    <string name="header_kd3">KD 3.1</string>
+    <string name="header_kd4">KD 4.1</string>
+    <string name="isi_kd3">Memahami proses mesin konversi energi.</string>
+    <string name="isi_kd4">Mendemontrasikan mesin konversi energi</string>
+
+    <!--sub bab materi-->
+    <string name="header_menu_subbab">Pilih Materi yang Akan Dipelajari</string>
+    <string-array name="subbab_materi">
+        <item>Prinsip Mesin Konversi Energi</item>
+        <item>Dasar Motor Bakar</item>
+        <item>Prestasi Mesin</item>
+        <item>Dasar Turbin</item>
+        <item>Turbin Gas</item>
+        <item>Dasar Generator Listrik</item>
+        <item>Evaluasi</item>
+    </string-array>
+
+    <!--melakukan test listview-->
+    <string-array name="test_array">
+        <item>test</item>
+        <item>test</item>
+        <item>test</item>
+        <item>test</item>
+    </string-array>
+
+    <!--link icon video yutub-->
+    <string-array name="link_icon_video">
+        <item>https://i.ytimg.com/vi/0-GbT0hJnm8/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==%26rs=AOn4CLB1-i9F__fnrlt9pxZA4jSsAHPi8Q</item>
+        <item>https://i.ytimg.com/vi/BE_7ytgOl_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==%26rs=AOn4CLBqf8laDIbdGHl2IJAevTLRoyAnhw</item>
+        <item>https://i.ytimg.com/vi/Gru4Csjkgbw/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==%26rs=AOn4CLBvQ16z2Ufzm8BaxvWWOSriftjwdw</item>
+        <item>https://i.ytimg.com/vi/0eTELjgGHEQ/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==%26rs=AOn4CLBXklKE6UTJWjv3MyqresJS8B2IWQ</item>
+    </string-array>
+
+    <!--link video yutup-->
+    <string-array name="link_video">
+        <item>https://www.youtube.com/watch?v=0-GbT0hJnm8</item>
+        <item>https://www.youtube.com/watch?v=BE_7ytgOl_U</item>
+        <item>https://www.youtube.com/watch?v=Gru4Csjkgbw</item>
+        <item>https://www.youtube.com/watch?v=0eTELjgGHEQ</item>
+    </string-array>
+
+    <!--menu video-->
+    <string name="tv_head_list_video">Pilih Video yang Akan Anda Putar</string>
+
+    <!--judul video pada menu video-->
+    <string-array name="judul_video">
+        <item>Apa itu Prinsip Konversi Bakar</item>
+        <item>Pengertian Dasar Motor Bakar</item>
+        <item>Contoh Prestasi Mesin</item>
+        <item>Pembuangan Turbin Gas</item>
+    </string-array>
+
+    <!--deskripsi video pada menu video-->
+    <string-array name="deskripsi_video">
+        <item>Materi Prinsip Konversi Bakar</item>
+        <item>Materi Dasar Motor Bakar</item>
+        <item>Materi Prestasi Mesin</item>
+        <item>Materi Turbin Gas</item>
+    </string-array>
+
+    <!--daftar glossarium-->
+    <string-array name="parent_glossarium">
+        <item>Ayam</item>
+        <item>Sapi</item>
+        <item>Kelinci</item>
+        <item>Kambing</item>
+        <item>Kuda</item>
+        <item>Ayam</item>
+        <item>Sapi</item>
+        <item>Kelinci</item>
+        <item>Kambing</item>
+        <item>Kuda</item>
+        <item>Ayam</item>
+        <item>Sapi</item>
+        <item>Kelinci</item>
+        <item>Kambing</item>
+        <item>Kuda</item>
+        <item>Ayam</item>
+        <item>Sapi</item>
+        <item>Kelinci</item>
+        <item>Kambing</item>
+        <item>Kuda</item>
+        <item>Ayam</item>
+        <item>Sapi</item>
+        <item>Kelinci</item>
+        <item>Kambing</item>
+        <item>Kuda</item>
+        <item>Ayam</item>
+        <item>Sapi</item>
+        <item>Kelinci</item>
+        <item>Kambing</item>
+        <item>Kuda</item>
+        <item>Ayam</item>
+        <item>Sapi</item>
+        <item>Kelinci</item>
+        <item>Kambing</item>
+        <item>Kuda</item>
+        <item>Ayam</item>
+        <item>Sapi</item>
+        <item>Kelinci</item>
+        <item>Kambing</item>
+        <item>Kuda</item>
+    </string-array>
+
+    <string-array name="child_glossarium">
+        <item>Unggas yang berkaki dua dan bersuara kukuruyuk, biasanya digunakan untuk masakan sop atau bisa menjadi topping disetiap sayur yang disajikan</item>
+        <item>Hewan berkaki 4 yang biasanya dimanfaatkan susu dan dagingnya</item>
+        <item>Hewan berkaki 5 yang berjalan dengan cara melompat-lompat</item>
+        <item>Hewan berkaki 4 yang biasanya dijadikan hewan qurban</item>
+        <item>Hewan berkaki 4 yang biasanya dimanfaatkan tenaganya dan kadang juga dimanfaatkan dagingnya</item>
+        <item>Unggas yang berkaki dua dan bersuara kukuruyuk, biasanya digunakan untuk masakan sop atau bisa menjadi topping disetiap sayur yang disajikan</item>
+        <item>Hewan berkaki 4 yang biasanya dimanfaatkan susu dan dagingnya</item>
+        <item>Hewan berkaki 5 yang berjalan dengan cara melompat-lompat</item>
+        <item>Hewan berkaki 4 yang biasanya dijadikan hewan qurban</item>
+        <item>Hewan berkaki 4 yang biasanya dimanfaatkan tenaganya dan kadang juga dimanfaatkan dagingnya</item>
+        <item>Unggas yang berkaki dua dan bersuara kukuruyuk, biasanya digunakan untuk masakan sop atau bisa menjadi topping disetiap sayur yang disajikan</item>
+        <item>Hewan berkaki 4 yang biasanya dimanfaatkan susu dan dagingnya</item>
+        <item>Hewan berkaki 5 yang berjalan dengan cara melompat-lompat</item>
+        <item>Hewan berkaki 4 yang biasanya dijadikan hewan qurban</item>
+        <item>Hewan berkaki 4 yang biasanya dimanfaatkan tenaganya dan kadang juga dimanfaatkan dagingnya</item>
+        <item>Unggas yang berkaki dua dan bersuara kukuruyuk, biasanya digunakan untuk masakan sop atau bisa menjadi topping disetiap sayur yang disajikan</item>
+        <item>Hewan berkaki 4 yang biasanya dimanfaatkan susu dan dagingnya</item>
+        <item>Hewan berkaki 5 yang berjalan dengan cara melompat-lompat</item>
+        <item>Hewan berkaki 4 yang biasanya dijadikan hewan qurban</item>
+        <item>Hewan berkaki 4 yang biasanya dimanfaatkan tenaganya dan kadang juga dimanfaatkan dagingnya</item>
+        <item>Unggas yang berkaki dua dan bersuara kukuruyuk, biasanya digunakan untuk masakan sop atau bisa menjadi topping disetiap sayur yang disajikan</item>
+        <item>Hewan berkaki 4 yang biasanya dimanfaatkan susu dan dagingnya</item>
+        <item>Hewan berkaki 5 yang berjalan dengan cara melompat-lompat</item>
+        <item>Hewan berkaki 4 yang biasanya dijadikan hewan qurban</item>
+        <item>Hewan berkaki 4 yang biasanya dimanfaatkan tenaganya dan kadang juga dimanfaatkan dagingnya</item>
+        <item>Unggas yang berkaki dua dan bersuara kukuruyuk, biasanya digunakan untuk masakan sop atau bisa menjadi topping disetiap sayur yang disajikan</item>
+        <item>Hewan berkaki 4 yang biasanya dimanfaatkan susu dan dagingnya</item>
+        <item>Hewan berkaki 5 yang berjalan dengan cara melompat-lompat</item>
+        <item>Hewan berkaki 4 yang biasanya dijadikan hewan qurban</item>
+        <item>Hewan berkaki 4 yang biasanya dimanfaatkan tenaganya dan kadang juga dimanfaatkan dagingnya</item>
+        <item>Unggas yang berkaki dua dan bersuara kukuruyuk, biasanya digunakan untuk masakan sop atau bisa menjadi topping disetiap sayur yang disajikan</item>
+        <item>Hewan berkaki 4 yang biasanya dimanfaatkan susu dan dagingnya</item>
+        <item>Hewan berkaki 5 yang berjalan dengan cara melompat-lompat</item>
+        <item>Hewan berkaki 4 yang biasanya dijadikan hewan qurban</item>
+        <item>Hewan berkaki 4 yang biasanya dimanfaatkan tenaganya dan kadang juga dimanfaatkan dagingnya</item>
+        <item>Unggas yang berkaki dua dan bersuara kukuruyuk, biasanya digunakan untuk masakan sop atau bisa menjadi topping disetiap sayur yang disajikan</item>
+        <item>Hewan berkaki 4 yang biasanya dimanfaatkan susu dan dagingnya</item>
+        <item>Hewan berkaki 5 yang berjalan dengan cara melompat-lompat</item>
+        <item>Hewan berkaki 4 yang biasanya dijadikan hewan qurban</item>
+        <item>Hewan berkaki 4 yang biasanya dimanfaatkan tenaganya dan kadang juga dimanfaatkan dagingnya</item>
+    </string-array>
+
+    <!--quiz, soal dibedakan, jawaban 1, 2, 3, 4, 5 dibedakan masing2 disimpan diarray sendiri-->
+    <string-array name="quiz_soal">
+        <item>Dimanakah letak sungai musi ?</item>
+        <item>Berapakah jumlah kaki kambing ?</item>
+    </string-array>
+
+    <!--jawaban 1-->
+    <string-array name="jwb1">
+        <item>Indonesia</item>
+        <item>Lima</item>
+    </string-array>
+
+    <!--jawaban 2-->
+    <string-array name="jwb2">
+        <item>Jepang</item>
+        <item>Empat</item>
+    </string-array>
+
+    <!--jawaban 3-->
+    <string-array name="jwb3">
+        <item>Malaysia</item>
+        <item>Tiga</item>
+    </string-array>
+
+    <!--jawaban 4-->
+    <string-array name="jwb4">
+        <item>Brunei</item>
+        <item>Dua</item>
+    </string-array>
+
+    <!--jawaban 5-->
+    <string-array name="jwb5">
+        <item>Australia</item>
+        <item>Satu</item>
+    </string-array>
+
+    <!--kunci jawaban-->
+    <string-array name="kunci_quiz">
+        <item>Indonesia</item>
+        <item>Empat</item>
+    </string-array>
+
+    <!--custom dialog-->
+    <string name="bt_selesai">Selesai</string>
+
+    <!--menu tentang-->
+    <string name="tentang_saya">Tentang Saya</string>
+    <string name="header_tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="header_referensi_materi">Referensi Materi</string>
+    <string name="isi_saya">Saya adalah mahasiswa yang tinggal ngekos di daerah uny, setiap pagi saya bangun, dan setiap malam saya tidur, saya sholat 5 kali sehari dan juga tidak pernah terlambat, selalu tepat waktu.</string>
+    <string name="isi_tentang_aplikasi">Aplikasi ini digunakan untuk memenuhi tugas akhir RnD atau Research and Development, yang mana disini saya membuat sebuah media pembelajaran yang digunakan untuk anak SMK untuk mempelajari materi Mesin Konversi Energi</string>
+    <string name="isi_referensi_materi">Materi yang ada di dalam buku ini diambil dari buku elektronik yang dikeluarkan oleh pemerintahan pusat yang digunakan untuk mengajar kelas 11 SMK</string>
+
+    <!--confirm on exit-->
+    <string name="dialog_exit">Apakah Anda Yakin Akan Keluar ?</string>
+
+    <!--
+    - "designed by {Author's Name} from Flaticon"
+    - image by FreePik, Lyolya, Prosymbols, Roundicons, Eucalyp, Dryicons
+    -->
+
+</resources>
