@@ -22,7 +22,7 @@ import java.util.List;
 public class QuizActivity2 extends AppCompatActivity {
 
     TextView tvPertanyaan;
-    int jumPertanyaan, skor, idSelected;
+    int jumPertanyaan, skor;
     boolean isNull;
     LinearLayout llParent;
     RadioButton rbSelected;
@@ -82,32 +82,38 @@ public class QuizActivity2 extends AppCompatActivity {
         ivAnswer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                skor = 0;
-                isNull = true;
-                for (int i = 0; i < listRg.size(); i++){
-//                    ngecek apakah radiogrup ada yang null apa enggak
-                    if (listRg.get(i).getCheckedRadioButtonId() == -1){
-                        break;
-                    }else {
-                        idSelected = listRg.get(i).getCheckedRadioButtonId();
+//                dicek apakah ada soal yang belum terjawab
+                if (isAnyNull()){
+                    Toast.makeText(QuizActivity2.this, "Semua soal harus terjawab", Toast.LENGTH_SHORT).show();
+                }else {
+                    skor = 0;
+                    isNull = true;
+                    for (int i = 0; i < listRg.size(); i++){
+                        int idSelected = listRg.get(i).getCheckedRadioButtonId();
                         rbSelected = (RadioButton)findViewById(idSelected);
 
                         int noSoal = i + 1;
                         if (rbSelected.getText().equals(kunci[i])){
                             skor++;
                         }
-                        isNull = false;
                     }
-                }
-//                kalo ada radiogrup yang kosong maka muncul toast
-                if (isNull == true){
-                    Toast.makeText(QuizActivity2.this, "Semua soal harus terjawab", Toast.LENGTH_SHORT).show();
-                }else {
+
                     dialog = new CustomDialogQuizResult(QuizActivity2.this, skor);
                     dialog.show();
                 }
             }
         });
+    }
+
+    private boolean isAnyNull() {
+        boolean isAdaNomorKosong = false;
+        for (int i = 0; i < listRg.size(); i++){
+            if (listRg.get(i).getCheckedRadioButtonId() == -1){
+                isAdaNomorKosong = true;
+                break;
+            }
+        }
+        return isAdaNomorKosong;
     }
 
     private void init() {
