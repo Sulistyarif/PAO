@@ -8,12 +8,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MateriActivity extends AppCompatActivity {
 
     WebView wvMateri;
     int idBab;
     ImageView ivBack, ivHome;
+    TextView tvHeader;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -43,6 +45,7 @@ public class MateriActivity extends AppCompatActivity {
 
         ivBack = view.findViewById(R.id.ibBack);
         ivHome = view.findViewById(R.id.ibHome);
+        tvHeader = view.findViewById(R.id.tvHeaderApp);
 
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,6 +62,7 @@ public class MateriActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        tvHeader.setText("Materi");
     }
 
     private void init() {

@@ -27,6 +27,7 @@ public class QuizActivity2 extends AppCompatActivity {
     LinearLayout llParent;
     RadioButton rbSelected;
     ImageView ivBack, ivHome, ivAnswer;
+    TextView tvHeader;
 
     String[] pertanyaan;
     String[] jawab1;
@@ -62,6 +63,7 @@ public class QuizActivity2 extends AppCompatActivity {
         ivBack = view.findViewById(R.id.ibBack);
         ivHome = view.findViewById(R.id.ibHome);
         ivAnswer = view.findViewById(R.id.ivCentang);
+        tvHeader = view.findViewById(R.id.tvHeaderApp);
 
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,6 +80,7 @@ public class QuizActivity2 extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        tvHeader.setText("Quiz");
 
         ivAnswer.setOnClickListener(new View.OnClickListener() {
             @Override

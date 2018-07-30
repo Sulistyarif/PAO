@@ -7,10 +7,12 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class KIKDActivity extends AppCompatActivity {
 
     ImageView ivBack, ivHome;
+    TextView tvHeader;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class KIKDActivity extends AppCompatActivity {
 
         ivBack = view.findViewById(R.id.ibBack);
         ivHome = view.findViewById(R.id.ibHome);
+        tvHeader = view.findViewById(R.id.tvHeaderApp);
 
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,5 +49,6 @@ public class KIKDActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        tvHeader.setText("KI KD");
     }
 }

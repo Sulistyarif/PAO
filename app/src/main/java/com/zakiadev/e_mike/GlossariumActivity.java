@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class GlossariumActivity extends AppCompatActivity {
 
@@ -16,6 +17,7 @@ public class GlossariumActivity extends AppCompatActivity {
     String[] listParent;
     String[] listChild;
     ImageView ivBack, ivHome;
+    TextView tvHeader;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -38,6 +40,7 @@ public class GlossariumActivity extends AppCompatActivity {
 
         ivBack = view.findViewById(R.id.ibBack);
         ivHome = view.findViewById(R.id.ibHome);
+        tvHeader = view.findViewById(R.id.tvHeaderApp);
 
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +57,7 @@ public class GlossariumActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        tvHeader.setText("Glossarium");
     }
 
     private void init() {

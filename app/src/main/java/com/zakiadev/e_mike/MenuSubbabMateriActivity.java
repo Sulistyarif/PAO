@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class MenuSubbabMateriActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -17,6 +18,7 @@ public class MenuSubbabMateriActivity extends AppCompatActivity implements Adapt
     String[] listMenu;
     ListSubbabAdapter adapter;
     ImageView ivBack, ivHome;
+    TextView tvHeader;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -40,6 +42,7 @@ public class MenuSubbabMateriActivity extends AppCompatActivity implements Adapt
 
         ivBack = view.findViewById(R.id.ibBack);
         ivHome = view.findViewById(R.id.ibHome);
+        tvHeader = view.findViewById(R.id.tvHeaderApp);
 
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +59,7 @@ public class MenuSubbabMateriActivity extends AppCompatActivity implements Adapt
                 startActivity(i);
             }
         });
+        tvHeader.setText("Materi");
     }
 
     private void init() {

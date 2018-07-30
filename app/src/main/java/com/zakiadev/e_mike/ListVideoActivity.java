@@ -26,6 +26,7 @@ public class ListVideoActivity extends AppCompatActivity {
     String[] listLinkVideo;
     ListVideoAdapter listVideoAdapter;
     ImageView ibBack, ibHome;
+    TextView tvHeader;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -57,6 +58,7 @@ public class ListVideoActivity extends AppCompatActivity {
 
         ibBack = view.findViewById(R.id.ibBack);
         ibHome = view.findViewById(R.id.ibHome);
+        tvHeader = view.findViewById(R.id.tvHeaderApp);
 
         ibBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +75,7 @@ public class ListVideoActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        tvHeader.setText("Video");
     }
 
     private void init() {

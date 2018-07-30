@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -18,9 +19,11 @@ public class TentangSayaActivity extends AppCompatActivity implements View.OnCli
 
     ImageView ivBack, ivHome;
     CircleImageView ivFb, ivTwitter, ivWA, ivInsta;
+    Button aboutDev;
     String fbURL = "https://www.facebook.com/kfsetyabudi";
     String fbPageID = "kfsetyabudi";
     String instaURL = "https://www.instagram.com/google/";
+    TextView tvHeader;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -38,11 +41,13 @@ public class TentangSayaActivity extends AppCompatActivity implements View.OnCli
         ivTwitter = (CircleImageView)findViewById(R.id.ivTwitter);
         ivWA = (CircleImageView)findViewById(R.id.ivWa);
         ivInsta = (CircleImageView)findViewById(R.id.ivInsta);
+        aboutDev = (Button)findViewById(R.id.btDev);
 
         ivFb.setOnClickListener(this);
         ivTwitter.setOnClickListener(this);
         ivWA.setOnClickListener(this);
         ivInsta.setOnClickListener(this);
+        aboutDev.setOnClickListener(this);
     }
 
     private void settingActionBar() {
@@ -54,9 +59,11 @@ public class TentangSayaActivity extends AppCompatActivity implements View.OnCli
 
         ivBack = view.findViewById(R.id.ibBack);
         ivHome = view.findViewById(R.id.ibHome);
+        tvHeader = view.findViewById(R.id.tvHeaderApp);
 
         ivBack.setOnClickListener(this);
         ivHome.setOnClickListener(this);
+        tvHeader.setText("Tentang Saya");
     }
 
     @Override
@@ -90,6 +97,11 @@ public class TentangSayaActivity extends AppCompatActivity implements View.OnCli
             }
             case R.id.ivInsta:{
                 startInsta();
+                break;
+            }
+            case R.id.btDev:{
+                Intent intent = new Intent(TentangSayaActivity.this, AboutDevActivity.class);
+                startActivity(intent);
                 break;
             }
         }

@@ -218,7 +218,8 @@
     <string name="bt_selesai">Selesai</string>
 
     <!--menu tentang-->
-    <string name="tentang_saya">Tentang Saya</string>
+    <string name="tentang_saya">Tentang saya</string>
+    <string name="nama">Verbry Kurniawan</string>
     <string name="header_tentang_aplikasi">Tentang Aplikasi</string>
     <string name="header_referensi_materi">Referensi Materi</string>
     <string name="isi_saya">Saya adalah mahasiswa yang tinggal ngekos di daerah uny, setiap pagi saya bangun, dan setiap malam saya tidur, saya sholat 5 kali sehari dan juga tidak pernah terlambat, selalu tepat waktu.</string>
@@ -228,9 +229,27 @@
     <!--confirm on exit-->
     <string name="dialog_exit">Apakah Anda Yakin Akan Keluar ?</string>
 
+    <string name="about_dev">About Developer</string>
+    <string-array name="dev_description">
+        <item>Library yang digunakan:</item>
+        <item> Picasso image Handler</item>
+        <item> Circle Image View</item>
+        <item> Dexter</item>
+        <item>Icon yang digunakan:</item>
+        <item> designed by FreePik, Lyolya, Prosymbols, Roundicons, Eucalyp, Dryicons from Flaticon</item>
+        <item> icons8</item>
+    </string-array>
+    <string name="library_user">Library yang digunakan\n
+    - Picasso\n
+    - Circle Image View\n
+    - Dexter</string>
+    <string name="icon_source">Icon yang digunakan\n
+    - designed by FreePik, Lyolya, Prosymbols, Roundicons, Eucalyp, Dryicons from Flaticon\n
+    - icons8</string>
+
     <!--
     - "designed by {Author's Name} from Flaticon"
-    - image by FreePik, Lyolya, Prosymbols, Roundicons, Eucalyp, Dryicons
+    - image by FreePik, Lyolya, Prosymbols, Roundicons, Eucalyp, Dryicons, icons8
     -->
 
 </resources>
