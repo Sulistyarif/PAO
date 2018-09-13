@@ -2,6 +2,8 @@ package com.zakiadev.e_mike;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
@@ -140,6 +142,8 @@ public class QuizActivity2 extends AppCompatActivity {
         for (int i = 0; i < jumPertanyaan; i++){
             tvPertanyaan = new TextView(QuizActivity2.this);
             tvPertanyaan.setText(pertanyaan[i]);
+            tvPertanyaan.setTextColor(Color.BLACK);
+            tvPertanyaan.setTypeface(null, Typeface.BOLD);
             llParent.addView(tvPertanyaan);
 
             final RadioButton[] rb = new RadioButton[5];

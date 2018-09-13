@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -17,8 +18,9 @@ public class MenuSubbabMateriActivity extends AppCompatActivity implements Adapt
     ListView lvMenuSubbab;
     String[] listMenu;
     ListSubbabAdapter adapter;
-    ImageView ivBack, ivHome;
+    ImageView ivBack, ivHome, ivBagan;
     TextView tvHeader;
+    Button btTestHide;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -59,12 +61,16 @@ public class MenuSubbabMateriActivity extends AppCompatActivity implements Adapt
                 startActivity(i);
             }
         });
+
         tvHeader.setText("Materi");
     }
 
     private void init() {
         lvMenuSubbab = (ListView)findViewById(R.id.lvsubbab);
+        ivBagan = (ImageView) findViewById(R.id.ivBaganMateri);
+
         lvMenuSubbab.setOnItemClickListener(this);
+        ivBagan.setVisibility(View.VISIBLE);
 
         listMenu = getResources().getStringArray(R.array.subbab_materi);
 

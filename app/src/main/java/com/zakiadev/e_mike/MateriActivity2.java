@@ -6,18 +6,15 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.webkit.WebChromeClient;
-import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MateriActivity extends AppCompatActivity {
+public class MateriActivity2 extends AppCompatActivity {
 
     WebView wvMateri;
     int idBab;
-    String urlRecall = "";
     ImageView ivBack, ivHome;
     TextView tvHeader;
 
@@ -30,42 +27,31 @@ public class MateriActivity extends AppCompatActivity {
 
         init();
 
-        if (idBab==99){
-            wvMateri.loadUrl(urlRecall);
-        }else {
-            switch (idBab){
-                case 0:{
-                    wvMateri.loadUrl("file:///android_asset/materi.html");
-                    break;
-                }
-                case 1:{
-                    wvMateri.loadUrl("file:///android_asset/materi2.html");
-                    break;
-                }
-                case 2:{
-                    wvMateri.loadUrl("file:///android_asset/materi3.html");
-                    break;
-                }
+        switch (idBab){
+            case 0:{
+                wvMateri.loadUrl("file:///android_asset/materi.html");
+                break;
+            }
+            case 1:{
+                wvMateri.loadUrl("file:///android_asset/materi2.html");
+                break;
+            }
+            case 2:{
+                wvMateri.loadUrl("file:///android_asset/materi3.html");
+                break;
             }
         }
-
 
         wvMateri.setWebViewClient(new WebViewClient(){
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
-//                if (url.equals("pindah://materi1_1")) {
-//                    url = "file:///android_asset/materi1_1.html";
-//                    wvMateri.loadUrl(url);
-//                }else {
-//                    return false;
-//                }
-
-                Intent intent = new Intent(MateriActivity.this, MateriActivity.class);
-                intent.putExtra("url", url);
-                startActivity(intent);
-                return true;
-
-
+                if (url.equals("pindah://materi1_1")) {
+                    url = "file:///android_asset/materi1_1.html";
+                    wvMateri.loadUrl(url);
+                    return true;
+                }else {
+                    return false;
+                }
             }
         });
 
@@ -93,7 +79,7 @@ public class MateriActivity extends AppCompatActivity {
         ivHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MateriActivity.this, MenuUtamaActivity.class);
+                Intent i = new Intent(MateriActivity2.this, MenuUtamaActivity.class);
                 i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(i);
             }
@@ -109,8 +95,7 @@ public class MateriActivity extends AppCompatActivity {
         wvMateri.getSettings().setDisplayZoomControls(false);
         wvMateri.getSettings().setBuiltInZoomControls(false);
 
-        idBab = getIntent().getIntExtra("idBab",99);
-        urlRecall = getIntent().getStringExtra("url");
+        idBab = getIntent().getIntExtra("idBab",0);
 
     }
 
@@ -119,4 +104,5 @@ public class MateriActivity extends AppCompatActivity {
 //        super.onBackPressed();
         finish();
     }
+
 }

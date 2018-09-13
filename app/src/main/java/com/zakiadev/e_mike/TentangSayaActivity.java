@@ -22,7 +22,7 @@ public class TentangSayaActivity extends AppCompatActivity implements View.OnCli
     Button aboutDev;
     String fbURL = "https://www.facebook.com/kfsetyabudi";
     String fbPageID = "kfsetyabudi";
-    String instaURL = "https://www.instagram.com/google/";
+    String instaURL = "https://www.instagram.com/vebriano_/";
     TextView tvHeader;
 
     @Override
@@ -91,7 +91,7 @@ public class TentangSayaActivity extends AppCompatActivity implements View.OnCli
                 break;
             }
             case R.id.ivWa:{
-                Intent linkWa = new Intent(Intent.ACTION_VIEW, Uri.parse("https://wa.me/6285701150020/?text=halo+mas"));
+                Intent linkWa = new Intent(Intent.ACTION_VIEW, Uri.parse("https://wa.me/6285701150020/?text=Assalamualaikum+mas"));
                 startActivity(linkWa);
                 break;
             }
@@ -125,11 +125,11 @@ public class TentangSayaActivity extends AppCompatActivity implements View.OnCli
         Intent intent = null;
         try{
             tentangSayaActivity.getPackageManager().getPackageInfo("com.twitter.android", 0);
-            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("twitter://user?screen_name=Google"));
+            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("twitter://user?screen_name=vebriano_"));
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 //            return intent;
         } catch (PackageManager.NameNotFoundException e) {
-            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/Google"));
+            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/vebriano_"));
         }
         startActivity(intent);
     }

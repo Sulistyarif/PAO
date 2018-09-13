@@ -27,11 +27,20 @@
         <ListView
             android:id="@+id/lvsubbab"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="5dp"
+            android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
             android:divider="#fff"
-            android:scrollbars="none"
-            android:dividerHeight="10dp"/>
+            android:dividerHeight="10dp"
+            android:scrollbars="none" />
+
+        <ImageView
+            android:id="@+id/ivBaganMateri"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/well" />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
