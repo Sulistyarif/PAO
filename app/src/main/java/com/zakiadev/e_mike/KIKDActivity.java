@@ -1,6 +1,7 @@
 package com.zakiadev.e_mike;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
@@ -37,6 +38,7 @@ public class KIKDActivity extends AppCompatActivity {
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                clickSound();
                 finish();
             }
         });
@@ -46,9 +48,15 @@ public class KIKDActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(KIKDActivity.this, MenuUtamaActivity.class);
                 i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                clickSound();
                 startActivity(i);
             }
         });
         tvHeader.setText("KI KD");
+    }
+
+    private void clickSound() {
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.click);
+        mp.start();
     }
 }

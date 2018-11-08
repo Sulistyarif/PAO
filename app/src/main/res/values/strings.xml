@@ -12,6 +12,7 @@
     <string name="menut_4">Quiz</string>
     <string name="menut_5">Glossarium</string>
     <string name="menut_6">Tentang</string>
+    <string name="menut_7">Bantuan</string>
 
     <!--KI KD -->
     <string name="tv_judul_kikd">Kompetensi Inti dan Kompetensi Dasar</string>
@@ -22,21 +23,51 @@
     <string name="header_ki4">KI 4 (Keterampilan)</string>
     <string name="isi_ki1">Menghargai dan menghayati ajaran agama yang dianutnya.</string>
     <string name="isi_ki2">Menghargai dan menghayati perilaku jujur, disiplin, tanggungjawab, peduli (toleransi, gotong royong), santun, percaya diri, dalam berinteraksi secara efektif dengan lingkungan sosial dan alam dalam jangkauan pergaulan dan keberadaannya.</string>
-    <string name="isi_ki3">Memahami, menerapkan dan menganalisis pengetahuan faktual, konseptual, dan prosedural berdasarkan rasa ingin tahunya tentang ilmu pengetahuan, teknologi, seni, budaya, dan humaniora dalam wawasan kemanusiaan, kebangsaan, kenegaraan, dan peradaban terkait penyebab fenomena dan kejadian dalam bidang kerja yang spesifik untuk memecahkan masalah.</string>
+    <string name="isi_ki3">Memahami, menerapkan, menganalisis, dan mengevaluasi tentang pengetahuan faktual, konseptual, operasional dasar, dan metakognitif sesuai dengan bidang dan lingkup kerja Dasar dasar Teknik Otomotif. Pada tingkat teknis, spesifik, detil, dan kompleks, berkenaan dengan ilmu pengetahuan, teknologi, seni, budaya, dan humaniora dalam konteks pengembangan potensi diri sebagai bagian dari keluarga, sekolah, dunia kerja, warga masyarakat nasional, regional, dan internasional</string>
     <string name="isi_ki4">Mengolah, menalar, dan menyaji dalam ranah konkret dan ranah abstrak  terkait dengan pengembangan dari yang dipelajarinya di sekolah secara mandiri, dan mampu melaksanakan tugas spesifik di bawah pengawasan langsung.</string>
     <string name="header_kd">Kompetensi Dasar</string>
     <string name="header_kd3">KD 3.1</string>
-    <string name="header_kd4">KD 4.1</string>
-    <string name="isi_kd3">Memahami proses mesin konversi energi.</string>
-    <string name="isi_kd4">Mendemontrasikan mesin konversi energi</string>
+    <string name="header_kd4">KD 3.4</string>
+    <string name="header_kd5">KD 3.5</string>
+    <string name="header_kd6">KD 3.6</string>
+    <string name="isi_kd4">Memahami proses mesin konversi energi.</string>
+    <string name="isi_kd5">Memahami klasifikasi engine.</string>
+    <string name="isi_kd6">Memahami cara kerja engine 2 dan 4 langkah.</string>
 
     <!--sub bab materi-->
     <string name="header_menu_subbab">Pilih Materi yang Akan Dipelajari</string>
     <string-array name="subbab_materi">
-        <item>Motor Bakar</item>
-        <item>Motor Listrik</item>
-        <item>Generator Listrik</item>
+        <item>Peta Konsep</item>
+        <item>Materi 1: Prinsip MKE</item>
+        <item>Materi 2: Motor Bakar</item>
+        <item>Materi 3: Motor Listrik</item>
+        <item>Materi 4: Generator Listrik</item>
     </string-array>
+
+    <string-array name="subbab_materi1">
+        <item>Proses MKE</item>
+        <item>Macam Energi</item>
+        <item>Sifat Energi</item>
+    </string-array>
+
+    <string-array name="subbab_materi2">
+        <item>Ditinjau dari Proses Pembakarannya</item>
+        <item>Ditinjau dari Bahan Bakarnya</item>
+        <item>Ditinjau dari Proses Kerjanya</item>
+        <item>Perhitungan Motor Bakar</item>
+    </string-array>
+
+    <string-array name="subbab_materi3">
+        <item>Prinsip Kerja Motor Listrik</item>
+        <item>Jenis Motor Listrik</item>
+    </string-array>
+
+    <string-array name="subbab_materi4">
+        <item>Generator AC</item>
+        <item>Generator DC</item>
+        <item>Penggunaan Generator</item>
+    </string-array>
+
 
     <!--melakukan test listview-->
     <string-array name="test_array">
@@ -99,276 +130,294 @@
 
     <!--daftar glossarium-->
     <string-array name="parent_glossarium">
-        <item>Akselerasi</item>
-        <item>Bore </item>
-        <item>CDI (Capacytor Discharge Ignition)</item>
+        <item>Akselerasi </item>
         <item>Combustion Chamber</item>
         <item>Compression Ratio</item>
-        <item>Deselerasi</item>
-        <item>Dieseling</item>
-        <item>Displacement</item>
-        <item>DOHC (Double Over Head Camshaft)</item>
-        <item>CVT(Countinuesly Variable Transmisi)</item>
-        <item>EBD ( Electronic Brakeforce Distribution)</item>
-        <item>ECU (Electronic Control Unit)</item>
-        <item>EGR (Exhaust Gas Recirculating)</item>
-        <item>EFI(Elektronik Fuel Injection)</item>
+        <item>Daya </item>
+        <item>Deselerasi </item>
+        <item>Dieseling </item>
+        <item>Displacement </item>
+        <item>Energi </item>
+        <item>Ergonomis </item>
+        <item>Flywheel </item>
         <item>Fuel Injection</item>
-        <item>ISC (Idle Speed Control)</item>
-        <item>Knocking</item>
-        <item>MPI (Multi Point Injection)</item>
-        <item>OHC (Over Head Camshaft)</item>
-        <item>OHV (Over Head Valve)</item>
+        <item>Fuse </item>
+        <item>Hertz (Hz)</item>
+        <item>Ignition </item>
+        <item>Joule </item>
+        <item>Kecepatan rata-rata </item>
+        <item>Knocking </item>
+        <item>Multimeter </item>
         <item>Overhaul</item>
         <item>Oversize</item>
-        <item>Porting</item>
+        <item>Porting </item>
         <item>RPM</item>
-        <item>SOHC (Single Over Head Camshaft)</item>
+        <item>Switch </item>
         <item>Throotle Valve</item>
-        <item>Torak</item>
-        <item>Turbo Timer</item>
-        <item>Turbulensi</item>
-        <item>TPS atau Throttle Position Sensor (DOHC)</item>
-        <item>Valve</item>
-        <item>VVT (Variable Valve Timing)</item>
+        <item>Torak </item>
+        <item>Turbulensi </item>
+        <item>Valve </item>
     </string-array>
 
     <string-array name="child_glossarium">
         <item>Penambahan Kecepatan melalui pemutaran handel gas/kecepatan lari awal kendaraan.</item>
-        <item>Diameter silinder</item>
-        <item>Sistem pengapian pada motor bensin yang menggunakan electronik (tidak menggunakan platina).</item>
         <item>Ruang bakar</item>
         <item>Jumlah volume ruang bakar dan volume silinder dibagi dengan volume ruang bakar</item>
+        <item>Kemampuan untuk melakukan usaha tiap satu satuan waktu.</item>
         <item>Penurunan Kecepatan melalui pemutaran handel gas.</item>
         <item>Ledakan campuran udara dan minyak pelumas dalam ruang kompresi atau bagian lain dari sistem udara</item>
         <item>Volume total silinder</item>
-        <item>Biasa disebut juga twincam: 2 (dua) camshaft dalam 1 (satu) cylinder head.</item>
-        <item>Salah satu type transmisi bergaya sentriugal dengan sistem kerja yang disebabkan putaran mesin, akan melemparkan sepatu kopling dan terhubung dengan rumah kopling.</item>
-        <item>System pembantu ABS, yakni rem bekerja berdasarkan sistem elektrik agar roda tidak terkunci.</item>
-        <item>Pengatur bahan bakar pada sistem injeksi.</item>
-        <item>Mengontrol pembentukan gas NOx pada gas buang.</item>
-        <item>Sistem penyemprotan bahan bakar yang dikontrol oleh ECU agar campuran udara dan bahan bakar sesuai sehingga pemakaian bahan bakar yang minimal serta mempunyai gas buang yang ramah lingkungan.</item>
+        <item>Kemampuan untuk melakukan usaha</item>
+        <item>Bisa dijangkau dengan mudah</item>
+        <item>Gunanya untuk meneruskan putaran kruk as agar ia tidak mudah berhenti.</item>
         <item>Sistim pencampuran bahan bakar dengan udara pada motor bensin dengan cara menggunakan pompa yang menginjeksikan (menyemprotkan) bahan bakar kedalam intake manifold melalui injector.</item>
-        <item>Komponen pada bagian body throttle untuk mengatur putaran idle berdasarkan perintah ECU.</item>
+        <item>Sekering</item>
+        <item>Satuan frekuensi, 1 Hz = 1 siklus per detik.</item>
+        <item>Penyalaan api pembakaran. Berbeda dengan diesel yang menyalakan pembakaran bahan bakar dengan sistem panas hasil kompresi, system ignition menyalakan pembakaran dengan menangkap percikan api yang dibuat melalui rangkaian antara pembangkit tenaga accumulator (aki), kumparan, dan busi sebagai pemicu.</item>
+        <item>Satuan usaha dalam SI, besarnya sama dengan kerja yang dilakukan oleh gaya 1 Newton untuk memindahkan benda sejauh 1 meter.</item>
+        <item>Perpindahan suatu benda dibagi waktu yang diperlukan benda tersebut untuk berpindah</item>
         <item>Waktu pembakaran tertunda yang panjang, dan tekanan kompresi tinggi sekali yang mengakibatkan putaran mesin kasar</item>
-        <item>System suplply bahan bakar ke mesin dengan dikontrol secara elektronik untuk mendapatkan suplai campuran udara yang sesuai dengan kondisi engine pada saat itu.</item>
-        <item>Konstruksi motor bensin maupun disel yang menempatkan camshaft pada cylinder head.</item>
-        <item>Konstruksi motor bensin maupun disel yang menempatkan valve (klep masuk dan klep buang) pada cylinder head.</item>
-        <item>Turun mesin.</item>
-        <item>Pembesaran diamater liner pada cilinder.</item>
+        <item>Alat pengukur beberapa satuan listrik, Volt, Ampere, Ohm.</item>
+        <item>Turun mesin</item>
+        <item>Pembesaran diamater liner pada cilinder</item>
         <item>Langkah untuk mencari efisiensi volumetrik yang ideal buat gas bakar</item>
-        <item>Rotation Per Minute atau Rotasi putaran mesin per menit.</item>
-        <item>1 Camshaft dalam 1 cylinder head yang menggunakan teknologi karburator pada system pembakarannya.</item>
-        <item>Valve yang berfungsi untuk mengatur RPM mesin.</item>
-        <item>Piston atau Seher.</item>
-        <item>Alat pengaman pada kendaraan diesel untuk mencegah terjadinya dieseling.</item>
+        <item>Rotation Per Minute atau Rotasi putaran mesin per menit</item>
+        <item>Sakelar, alat untuk menyalakan atau mematikan peralatan listrik.</item>
+        <item>Valve yang berfungsi untuk mengatur RPM mesin</item>
+        <item>Piston atau Seher</item>
         <item>Getaran atau Goncangan akibat kinerja mesin</item>
-        <item>Sensor berbentuk potensiometer untuk memonitor posisi throttle pada mesin terletak di bagian butterfly spindle (flap throttle).</item>
         <item>Katup atau Klep</item>
-        <item>Pengaturan lama waktu pembukaan dan tinggi bukaan valve yang disesuaikan dengan putaran kerja motor.</item>
     </string-array>
 
     <!--quiz, soal dibedakan, jawaban 1, 2, 3, 4, 5 dibedakan masing2 disimpan diarray sendiri-->
     <string-array name="quiz_soal">
         <item>1. Yang di maksud dengan konversi energi adalah ....</item>
-        <item>2. External combustion engine maksudnya adalah ....</item>
-        <item>3. Mesin yang memanfaatkan fluida kerja/gas panas hasil pembakaran, di mana antara medium yang memanfaatkan fluida kerjanya tidak dipisahkan oleh dinding pemisah adalah ....</item>
-        <item>4. Motor yang memerlukan dua langkah torak dengan satu putaran poros engkol untuk menghasilkan tenaga disebut ....</item>
-        <item>5. Motor yang memerlukan empat langkah piston dengan dua putran poros engkol untuk menghasilkan tenaga disebut ....</item>
-        <item>6. Pada motor 4 tak, 4 silinder dengan FO: 1-3-4-2, saat silinder satu sedang langkah kompresi maka silinder tiga sedang langkah ....</item>
-        <item>7. Pada motor 4 tak saat campuran udara dan bahan bakar masuk ke dalam silinder, piston bergerak ke TMB dan katup masuk terbuka serta katup buang tertutup disebut ....</item>
-        <item>8. Yang termasuk langkah kompresi motor 4 tak adalah ....</item>
-        <item>9. Pada motor 4 tak, akhir langkah kompresi poros engkol berputar sebanyak … derajat</item>
-        <item>10. Komponen yang berfungsi menghubungkan torak dengan batang torak adalah ....</item>
-        <item>11. Untuk merubah gerak bolak-balik torak menjadi gerak putar pada sumbu utama motor diperlukan ....</item>
-        <item>12. Pada motor diesel, saat langkah hisap yang diisap adalah ....</item>
-        <item>13. Yang tidak termasuk bagian khusus pada motor bensin yaitu ....</item>
-        <item>14. Bagian pokok sebuah motor bensin yang berfungsi mencampur bahan bakar dengan udara untuk keperluan pembakaran adalah ....</item>
-        <item>15. Pada motor bensin, kepala silinder berfungsi sebagai tempat dudukan komponen berikut ini, kecuali ....</item>
-        <item>16. Yang berfungsi untuk menahan kotoran yang tercampur dalam udara untuk keperluan pembakaran adalah ....</item>
-        <item>17. Campuran bahan bakar dan udara dengan perbandingan 1 : 12 artinya ....</item>
-        <item>18. Pada motor bensin, komponen yang sering difungsikan sebagai tempat magnet dan kipas penghembus udara pendingin adalah ....</item>
-        <item>19. Komponen yang berfungsi untuk mencegah kebocoran antara dinding silinder dengan torak adalah ....</item>
-        <item>20. Komponen mesin yang berfungsi untuk menyimpan tenaga selama motor tidak menghasilkan tenaga adalah ....</item>
-        <item>21. Yang berfungsi untuk membuka katup-katup masuk dan buang yang digerakkan oleh timing pengapian melalui V-belt atau rantai yaitu ....</item>
-        <item>22. Fungsi sirip-sirip pada kepala silinder adalah ....</item>
-        <item>23. Pengabut (injector) pada motor diesel dipasang pada ....</item>
-        <item>24. Alat yang dapat mengubah energi mekanik menjadi energi listrik disebut ....</item>
-        <item>25. Generator yang menghasilkan arus AC biasa disebut dengan ....</item>
+
+        <item>2. Mesin yang memanfaatkan fluida kerja/gas panas hasil pembakaran, di mana antara medium yang memanfaatkan fluida kerjanya tidak dipisahkan oleh dinding pemisah adalah ....</item>
+        <item>3. Motor yang memerlukan dua langkah torak dengan satu putaran poros engkol untuk menghasilkan tenaga disebut ....</item>
+        <item>4. Motor yang memerlukan empat langkah piston dengan dua putran poros engkol untuk menghasilkan tenaga disebut ....</item>
+        <item>5. Pada motor 4 tak, 4 silinder dengan FO: 1-3-4-2, saat silinder satu sedang langkah kompresi maka silinder tiga sedang langkah ....</item>
+
+        <item>6. Yang termasuk langkah kompresi motor 4 tak adalah ....</item>
+        <item>7. Pada motor 4 tak, akhir langkah kompresi poros engkol berputar sebanyak … derajat</item>
+        <item>8. Komponen yang berfungsi menghubungkan torak dengan batang torak adalah ....</item>
+        <item>9. Untuk merubah gerak bolak-balik torak menjadi gerak putar pada sumbu utama motor diperlukan ....</item>
+        <item>10. Pada motor diesel, saat langkah hisap yang diisap adalah ....</item>
+
+        <item>11. Bagian pokok sebuah motor bensin yang berfungsi mencampur bahan bakar dengan udara untuk keperluan pembakaran adalah ....</item>
+        <item>12. Pada motor bensin, kepala silinder berfungsi sebagai tempat dudukan komponen berikut ini, kecuali ....</item>
+        <item>13. Yang berfungsi untuk menahan kotoran yang tercampur dalam udara untuk keperluan pembakaran adalah ....</item>
+        <item>14. Campuran bahan bakar dan udara dengan perbandingan 1 : 12 artinya ....</item>
+
+        <item>15. Komponen yang berfungsi untuk mencegah kebocoran antara dinding silinder dengan torak adalah ....</item>
+        <item>16. Komponen mesin yang berfungsi untuk menyimpan tenaga selama motor tidak menghasilkan tenaga adalah ....</item>
+        <item>17. Yang berfungsi untuk membuka katup-katup masuk dan buang yang digerakkan oleh timing pengapian melalui V-belt atau rantai yaitu ....</item>
+        <item>18. Fungsi sirip-sirip pada kepala silinder adalah ....</item>
+        <item>19. Pengabut (injector) pada motor diesel dipasang pada ....</item>
+        <item>20. Pada umumnya motor AC dibagi menjadi dua, salah satunya adalah ....</item>
+        <item>21. Di bawah ini alat yang tidak menerapkan prinsip induksi elektromagnetik ....</item>
+        <item>22. Alat yang dapat mengubah energi mekanik menjadi energi listrik disebut ....</item>
+        <item>23. Generator yang menghasilkan arus AC biasa disebut dengan ....</item>
+        <item>24. Generator AC ditinjau dari sumbernya dibagi menjadi dua, salah satunya adalah ...</item>
+        <item>25. Dinamo yang terpasang pada roda sepeda akan menghasilkan arus ....</item>
     </string-array>
 
     <!--jawaban 1-->
     <string-array name="jwb1">
         <item>Perubahan energi otot menjadi gerak</item>
-        <item>Motor pembakaran dalam</item>
+
         <item>Motor pembakaran dalam</item>
         <item>Motor wankel</item>
         <item>Motor wankel</item>
         <item>Langkah hisap</item>
-        <item>Langkah hisap</item>
+
         <item>Katup masuk terbuka</item>
         <item>0</item>
         <item>Cincin torak</item>
         <item>Poros nok</item>
         <item>Udara murni</item>
-        <item>Sistem penyalaan</item>
+
         <item>Karburator</item>
         <item>Busi</item>
         <item>Oil filter</item>
         <item>1 liter oli untuk 1 liter air</item>
-        <item>Ruang engkol</item>
+
         <item>Ruang engkol</item>
         <item>Tekanan oli yang kental</item>
         <item>Crank shaft</item>
         <item>Meredam getaran</item>
         <item>Kepala silinder</item>
+        <item>Motor Sikron</item>
+        <item>Generator</item>
         <item>Generator</item>
         <item>Alternator</item>
+        <item>Generator Shunt</item>
+        <item>Kuat</item>
     </string-array>
 
     <!--jawaban 2-->
     <string-array name="jwb2">
         <item>Perubahan energi matahari menjadi otot</item>
-        <item>Motor pembakaran luar</item>
+
         <item>Motor pembakaran luar</item>
         <item>Motor bensin</item>
         <item>Motor bensin</item>
         <item>Langkah kompresi</item>
-        <item>Langkah kompresi</item>
+
         <item>Katup buang terbuka</item>
         <item>180</item>
         <item>Pena torak</item>
         <item>Poros engkol</item>
         <item>Campuran udara – bahan bakar</item>
-        <item>Bosch pump</item>
+
         <item>Tangki</item>
         <item>Intake manifold</item>
         <item>Air filter</item>
         <item>1 kg udara untuk 12 kg air</item>
-        <item>Pena engkol</item>
+
         <item>Pena torak</item>
         <item>Karburator</item>
         <item>Connecting rod</item>
         <item>Mempercepat pendinginan</item>
         <item>Batang torak</item>
+        <item>Motor Shunt</item>
+        <item>Dinamo</item>
         <item>Akumulator</item>
         <item>Dinamo</item>
+        <item>Generator Compound</item>
+        <item>Bolak-balik</item>
     </string-array>
 
     <!--jawaban 3-->
     <string-array name="jwb3">
         <item>Perubahan energi mekanik menjadi listrik</item>
-        <item>Motor listrik</item>
+
         <item>Motor bakar</item>
         <item>Motor diesel</item>
         <item>Motor diesel</item>
         <item>Langkah usaha</item>
-        <item>Langkah usaha</item>
+
         <item>Kedua katup tertutup</item>
         <item>360</item>
         <item>Batang torak</item>
         <item>Pena torak</item>
         <item>Air</item>
-        <item>Kabel busi</item>
+
         <item>Turbocharger</item>
         <item>Exhaust manifold</item>
         <item>Water filter</item>
         <item>1 kg udara diperlukan 12 kg bensin</item>
-        <item>Puli</item>
+
         <item>Cincin pelumas</item>
         <item>Poros engkol</item>
         <item>Piston pin</item>
         <item>Mencegah karat</item>
         <item>Poros engkol</item>
+        <item>Motor Separately Exited</item>
+        <item>Trafo</item>
         <item>Transistor</item>
         <item>Akumulator</item>
+        <item>Generator penguat terpisah</item>
+        <item>Searah</item>
     </string-array>
 
     <!--jawaban 4-->
     <string-array name="jwb4">
         <item>Perubahan energi listrik menjadi energi mekanik</item>
-        <item>Mesin bensin</item>
+
         <item>Motor diesel</item>
         <item>Motor 2 tak</item>
         <item>Motor 2 tak</item>
         <item>Langkah buang</item>
-        <item>Langkah buang</item>
+
         <item>Poros engkol berputar 540 derajat</item>
         <item>540</item>
         <item>Bantalan torak</item>
         <item>Silinder</item>
         <item>Bensin</item>
-        <item>Karburator</item>
+
         <item>Nozel</item>
         <item>Mekanisme katup</item>
         <item>Fuel filter</item>
         <item>1 kg bensin diperlukan 12 kg udara</item>
-        <item>Roda gila</item>
+
         <item>Cincin kompresi</item>
         <item>Poros nok</item>
         <item>Camshaft</item>
         <item>Penahan panas</item>
         <item>Blok silinder</item>
+        <item>Motor Self Exited</item>
+        <item>Transistor</item>
         <item>Motor listrik</item>
         <item>Resistor</item>
+        <item>Generator 3-phase</item>
+        <item>Lemah</item>
     </string-array>
 
     <!--jawaban 5-->
     <string-array name="jwb5">
         <item>Perubahan energi satu ke bentuk energi lain</item>
-        <item>Mesin diesel</item>
+
         <item>Motor bensin</item>
         <item>Motor 4 tak</item>
         <item>Motor 4 tak</item>
         <item>Overlap</item>
-        <item>Overlap</item>
+
         <item>Gas bekas keluar</item>
         <item>720</item>
         <item>Pasak</item>
         <item>Cincin torak</item>
         <item>Solar</item>
-        <item>Busi</item>
+
         <item>Pengabut</item>
         <item>Piston</item>
         <item>Water sedimenter</item>
         <item>1 liter bensin untuk 12 km perjalanan</item>
-        <item>Torak</item>
+
         <item>Batang torak</item>
         <item>Roda gila</item>
         <item>Spark plug</item>
         <item>Pelumasan</item>
         <item>Piston</item>
+        <item>Motor compound</item>
+        <item>Transformator</item>
         <item>Resistor</item>
         <item>Elemen AC</item>
+        <item>Generator Listrik</item>
+        <item>Tinggi</item>
     </string-array>
 
     <!--kunci jawaban-->
     <string-array name="kunci_quiz">
         <item>Perubahan energi satu ke bentuk energi lain</item>
-        <item>Motor pembakaran luar</item>
+
         <item>Motor pembakaran luar</item>
         <item>Motor 2 tak</item>
         <item>Motor 4 tak</item>
         <item>Langkah buang</item>
-        <item>Langkah hisap</item>
+
         <item>Kedua katup tertutup</item>
         <item>180</item>
         <item>Pena torak</item>
         <item>Poros engkol</item>
         <item>Udara murni</item>
-        <item>Bosch pump</item>
+
         <item>Karburator</item>
         <item>Piston</item>
         <item>Air filter</item>
         <item>1 kg bensin diperlukan 12 kg udara</item>
-        <item>Puli</item>
+
         <item>Cincin kompresi</item>
         <item>Roda gila</item>
         <item>Camshaft</item>
         <item>Mempercepat pendinginan</item>
         <item>Kepala silinder</item>
+        <item>Motor Sikron</item>
+        <item>Transistor</item>
         <item>Generator</item>
         <item>Alternator</item>
+        <item>Generator 3-phase</item>
+        <item>Searah</item>
     </string-array>
 
     <!--custom dialog-->
@@ -376,12 +425,12 @@
 
     <!--menu tentang-->
     <string name="tentang_saya">Tentang saya</string>
-    <string name="nama">Verbry Kurniawan</string>
+    <string name="nama">Kurnia Feby Setyabudi</string>
     <string name="header_tentang_aplikasi">Tentang Aplikasi</string>
     <string name="header_referensi_materi">Referensi Materi</string>
     <string name="isi_saya">merupakan mahasiswa Universitas Negeri Yogyakarta program studi Pendidikan Teknik Otomotif-S1 yang sedang berjuang menyelesaikan skripsi dengan media pembelajaran ini.</string>
     <string name="isi_tentang_aplikasi">e-MiKE merupakan media pembelajaran berbasis android untuk mata pelajaran Teknologi Otomotif Dasar kelas X yang berfokus pada materi Mesin Konversi Energi. Dengan adanya aplikasi ini pengguna diharapkan bisa belajar materi mesin konversi energi dimanapun dan kapanpun.</string>
-    <string name="isi_referensi_materi">Materi didalam media pembelajaran ini diambil dari beberapa sumber seperti buku elwkteonik sekolah (BSE) terbitan kementrian pendidikan dan kebudayaan, selain itu juga diambil dari buku terbitan xxx (bukune masih tak cari, lali le delehke). lalu untuk video mengambil referensi dari youtube.</string>
+    <string name="isi_referensi_materi">Materi didalam media pembelajaran ini diambil dari buku <b><i>Teknologi Dasar Otomotif Program Keahlian Teknik Otomotif untuk SMK/MAK</i></b> terbitan Mediatama, buku <b><i>Konversi Energi</i></b> terbitan Kementrian Pendidikan dan Kebudayaan Republik Indonesia, buku <b><i>Teknologi Dasar Otomotif untuk SMK/MAK</i></b>, terbitan Kementrian Pendidikan dan Kebudayaan Republik Indonesia, dan buku <b><i>Teknologi Dasar Otomotif untuk SMK dan MAK</i></b> terbitan Armico. Lalu untuk video mengambil referensi dari Youtube.</string>
 
     <!--confirm on exit-->
     <string name="dialog_exit">Apakah Anda Yakin Akan Keluar ?</string>
@@ -408,5 +457,24 @@
     - "designed by {Author's Name} from Flaticon"
     - image by FreePik, Lyolya, Prosymbols, Roundicons, Eucalyp, Dryicons, icons8
     -->
+
+    <!--terdapat pada Bantuan Activity-->
+
+    <string-array name="daftar_menu">
+        <item>KI/KD</item>
+        <item>Materi</item>
+        <item>Quiz</item>
+        <item>Glossarium</item>
+        <item>Tentang</item>
+        <item>Bantuan</item>
+    </string-array>
+    <string-array name="deskripsi_menu">
+        <item>Menu KI/KD berisi penjelasan Kompetensi Inti dan Kompetensi dasar yang akan dicapai setelah belajar menggunakan media ini</item>
+        <item>Menu Materi berisi materi yang akan dipelajari</item>
+        <item>Menu Quiz berisi soal soal yang dapat digunakan untuk mengetahui sampai mana peserta didik memahami materi yang telah dipelajari</item>
+        <item>Menu Glossarium berisi tentang istilah yang ada didalam materi</item>
+        <item>Menu Tentang berisi penjelasan aplikasi dan informasi pengembang aplikasi</item>
+        <item>Menu Bantuan berisi penjelasan menu yang ada</item>
+    </string-array>
 
 </resources>

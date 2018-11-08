@@ -1,6 +1,7 @@
 package com.zakiadev.e_mike;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
@@ -34,16 +35,52 @@ public class MateriActivity extends AppCompatActivity {
             wvMateri.loadUrl(urlRecall);
         }else {
             switch (idBab){
-                case 0:{
-                    wvMateri.loadUrl("file:///android_asset/materi.html");
+                case 10:{
+                    wvMateri.loadUrl("file:///android_asset/materi1_0.html");
                     break;
                 }
-                case 1:{
-                    wvMateri.loadUrl("file:///android_asset/materi2.html");
+                case 11:{
+                    wvMateri.loadUrl("file:///android_asset/materi1_1.html");
                     break;
                 }
-                case 2:{
-                    wvMateri.loadUrl("file:///android_asset/materi3.html");
+                case 12:{
+                    wvMateri.loadUrl("file:///android_asset/materi1_2.html");
+                    break;
+                }
+                case 20:{
+                    wvMateri.loadUrl("file:///android_asset/materi2_0.html");
+                    break;
+                }
+                case 21:{
+                    wvMateri.loadUrl("file:///android_asset/materi2_1.html");
+                    break;
+                }
+                case 22:{
+                    wvMateri.loadUrl("file:///android_asset/materi2_2.html");
+                    break;
+                }
+                case 23:{
+                    wvMateri.loadUrl("file:///android_asset/materi2_3.html");
+                    break;
+                }
+                case 30:{
+                    wvMateri.loadUrl("file:///android_asset/materi3_0.html");
+                    break;
+                }
+                case 31:{
+                    wvMateri.loadUrl("file:///android_asset/materi3_1.html");
+                    break;
+                }
+                case 40:{
+                    wvMateri.loadUrl("file:///android_asset/materi4_0.html");
+                    break;
+                }
+                case 41:{
+                    wvMateri.loadUrl("file:///android_asset/materi4_1.html");
+                    break;
+                }
+                case 42:{
+                    wvMateri.loadUrl("file:///android_asset/materi4_2.html");
                     break;
                 }
             }
@@ -53,12 +90,6 @@ public class MateriActivity extends AppCompatActivity {
         wvMateri.setWebViewClient(new WebViewClient(){
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
-//                if (url.equals("pindah://materi1_1")) {
-//                    url = "file:///android_asset/materi1_1.html";
-//                    wvMateri.loadUrl(url);
-//                }else {
-//                    return false;
-//                }
 
                 Intent intent = new Intent(MateriActivity.this, MateriActivity.class);
                 intent.putExtra("url", url);
@@ -86,6 +117,7 @@ public class MateriActivity extends AppCompatActivity {
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                clickSound();
                 finish();
             }
         });
@@ -95,10 +127,16 @@ public class MateriActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(MateriActivity.this, MenuUtamaActivity.class);
                 i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                clickSound();
                 startActivity(i);
             }
         });
         tvHeader.setText("Materi");
+    }
+
+    private void clickSound() {
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.click);
+        mp.start();
     }
 
     private void init() {
@@ -117,6 +155,7 @@ public class MateriActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
 //        super.onBackPressed();
+        clickSound();
         finish();
     }
 }

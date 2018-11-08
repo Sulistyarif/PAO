@@ -16,11 +16,11 @@ import org.w3c.dom.Text;
 
 public class ListSubbabAdapter extends BaseAdapter {
 
-    TextView tvSubbab;
-    ImageView ivSubbab;
-    String[] listSubbab;
-    Activity activity;
-    LayoutInflater inflater = null;
+    private TextView tvSubbab;
+    private ImageView ivSubbab;
+    private String[] listSubbab;
+    private Activity activity;
+    private LayoutInflater inflater = null;
 
     public ListSubbabAdapter(String[] listSubbab, Activity activity) {
         super();
@@ -56,7 +56,7 @@ public class ListSubbabAdapter extends BaseAdapter {
         ivSubbab = (ImageView)v.findViewById(R.id.ivSubBab);
 
         tvSubbab.setText(listSubbab[i]);
-        ivSubbab.setImageDrawable(activity.getResources().getDrawable(R.drawable.icon_read));
+        ivSubbab.setImageDrawable(activity.getResources().getDrawable(R.drawable.icon_buku));
 
         tvSubbab.setEllipsize(TextUtils.TruncateAt.MARQUEE);
         tvSubbab.setSingleLine(true);

@@ -34,13 +34,5 @@
             android:dividerHeight="10dp"
             android:scrollbars="none" />
 
-        <ImageView
-            android:id="@+id/ivBaganMateri"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:scaleType="fitXY"
-            android:visibility="invisible"
-            app:srcCompat="@drawable/well" />
-
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

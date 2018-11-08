@@ -33,7 +33,7 @@ public class MateriActivity2 extends AppCompatActivity {
                 break;
             }
             case 1:{
-                wvMateri.loadUrl("file:///android_asset/materi2.html");
+                wvMateri.loadUrl("file:///android_asset/materi2_0.html");
                 break;
             }
             case 2:{

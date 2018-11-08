@@ -25,10 +25,11 @@
         <activity android:name=".ListVideoActivity"></activity>
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".GlossariumActivity"></activity>
-        <activity android:name=".QuizActivity"></activity>
         <activity android:name=".TentangSayaActivity"></activity>
         <activity android:name=".QuizActivity2"></activity>
         <activity android:name=".AboutDevActivity"></activity>
+        <activity android:name=".BantuanActivity"/>
+        <activity android:name=".PetaKonsepActivity"/>
     </application>
 
 </manifest>

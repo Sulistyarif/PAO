@@ -4,7 +4,7 @@
     android:id="@+id/cons1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/alternate_background_smoother">
+    android:background="@drawable/background">
 
     <LinearLayout
         android:id="@+id/ll1"
@@ -93,8 +93,8 @@
                         android:layout_weight="1"
                         android:text="@string/menut_1"
                         android:textAlignment="center"
-                        android:background="@drawable/full_round_border_colored"
-                        android:textColor="#111"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -124,9 +124,9 @@
                         android:paddingEnd="5dp"
                         android:layout_weight="1"
                         android:text="@string/menut_2"
-                        android:background="@drawable/full_round_border_colored"
+                        android:textStyle="bold"
                         android:textAlignment="center"
-                        android:textColor="#111"
+                        android:textColor="#fff"
                         android:textSize="20sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -137,37 +137,6 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal">
-
-                <LinearLayout
-                    android:id="@+id/llmenu3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:padding="10dp"
-                    android:weightSum="2">
-
-                    <ImageView
-                        android:id="@+id/imageView9"
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/icon_video" />
-
-                    <TextView
-                        android:id="@+id/textView20"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:paddingStart="5dp"
-                        android:paddingEnd="5dp"
-                        android:layout_weight="1"
-                        android:text="@string/menut_3"
-                        android:background="@drawable/full_round_border_colored"
-                        android:textAlignment="center"
-                        android:textColor="#111"
-                        android:textSize="20sp" />
-                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/llmenu4"
@@ -194,21 +163,12 @@
                         android:paddingEnd="5dp"
                         android:layout_weight="1"
                         android:text="@string/menut_4"
-                        android:background="@drawable/full_round_border_colored"
+                        android:textStyle="bold"
                         android:textAlignment="center"
-                        android:textColor="#111"
+                        android:textColor="#fff"
                         android:textSize="20sp" />
 
                 </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/ll7"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/llmenu5"
@@ -235,12 +195,21 @@
                         android:paddingEnd="5dp"
                         android:layout_weight="1"
                         android:text="@string/menut_5"
-                        android:background="@drawable/full_round_border_colored"
+                        android:textStyle="bold"
                         android:textAlignment="center"
-                        android:textColor="#111"
+                        android:textColor="#fff"
                         android:textSize="20sp" />
 
                 </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/llmenu6"
@@ -267,11 +236,43 @@
                         android:paddingEnd="5dp"
                         android:layout_weight="1"
                         android:text="@string/menut_6"
-                        android:background="@drawable/full_round_border_colored"
+                        android:textStyle="bold"
                         android:textAlignment="center"
-                        android:textColor="#111"
+                        android:textColor="#fff"
                         android:textSize="20sp" />
                 </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llmenu7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/icon_help" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/menut_7"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
             </LinearLayout>
 
             <TextView

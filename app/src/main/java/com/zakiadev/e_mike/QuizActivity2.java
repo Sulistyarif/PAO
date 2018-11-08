@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
@@ -70,6 +71,7 @@ public class QuizActivity2 extends AppCompatActivity {
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                clickSound();
                 finish();
             }
         });
@@ -79,6 +81,7 @@ public class QuizActivity2 extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(QuizActivity2.this, MenuUtamaActivity.class);
                 i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                clickSound();
                 startActivity(i);
             }
         });
@@ -89,8 +92,10 @@ public class QuizActivity2 extends AppCompatActivity {
             public void onClick(View view) {
 //                dicek apakah ada soal yang belum terjawab
                 if (isAnyNull()){
+                    clickSound();
                     Toast.makeText(QuizActivity2.this, "Semua soal harus terjawab", Toast.LENGTH_SHORT).show();
                 }else {
+                    clickSound();
                     skor = 0;
                     isNull = true;
                     for (int i = 0; i < listRg.size(); i++){
@@ -108,6 +113,11 @@ public class QuizActivity2 extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    private void clickSound() {
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.click);
+        mp.start();
     }
 
     private boolean isAnyNull() {

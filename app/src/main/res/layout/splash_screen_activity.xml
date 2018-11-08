@@ -4,7 +4,7 @@
     android:id="@+id/clSplash"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/alternate_background">
+    android:background="@drawable/background">
 
     <LinearLayout
         android:id="@+id/llSplash"
@@ -23,7 +23,7 @@
             android:fontFamily="serif"
             android:text="@string/splash_screen_tv"
             android:textAlignment="center"
-            android:textColor="#111"
+            android:textColor="#fff"
             android:textSize="36sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +37,7 @@
             android:fontFamily="serif"
             android:text="@string/splash_screen_tv_explain"
             android:textAlignment="center"
-            android:textColor="#111"
+            android:textColor="#fff"
             android:textSize="20sp" />
     </LinearLayout>
 

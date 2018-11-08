@@ -3,6 +3,7 @@ package com.zakiadev.e_mike;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -70,12 +71,14 @@ public class TentangSayaActivity extends AppCompatActivity implements View.OnCli
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.ibBack:{
+                clickSound();
                 finish();
                 break;
             }
             case R.id.ibHome:{
                 Intent i = new Intent(TentangSayaActivity.this, MenuUtamaActivity.class);
                 i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                clickSound();
                 startActivity(i);
                 break;
             }
@@ -83,28 +86,38 @@ public class TentangSayaActivity extends AppCompatActivity implements View.OnCli
                 Intent facebookIntent = new Intent(Intent.ACTION_VIEW);
                 String facebookUrl = getFaceBookPageURL(this);
                 facebookIntent.setData(Uri.parse(facebookUrl));
+                clickSound();
                 startActivity(facebookIntent);
                 break;
             }
             case R.id.ivTwitter:{
                 startTwitter(this);
+                clickSound();
                 break;
             }
             case R.id.ivWa:{
                 Intent linkWa = new Intent(Intent.ACTION_VIEW, Uri.parse("https://wa.me/6285701150020/?text=Assalamualaikum+mas"));
+                clickSound();
                 startActivity(linkWa);
                 break;
             }
             case R.id.ivInsta:{
                 startInsta();
+                clickSound();
                 break;
             }
             case R.id.btDev:{
                 Intent intent = new Intent(TentangSayaActivity.this, AboutDevActivity.class);
+                clickSound();
                 startActivity(intent);
                 break;
             }
         }
+    }
+
+    private void clickSound() {
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.click);
+        mp.start();
     }
 
     private void startInsta() {
