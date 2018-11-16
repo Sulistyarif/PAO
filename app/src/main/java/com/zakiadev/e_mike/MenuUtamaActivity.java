@@ -92,7 +92,8 @@ public class MenuUtamaActivity extends AppCompatActivity implements View.OnClick
                 break;
             }
             case R.id.llmenu4:{
-                startActivity(new Intent(MenuUtamaActivity.this, QuizActivity2.class));
+//                startActivity(new Intent(MenuUtamaActivity.this, QuizActivity2.class));
+                startActivity(new Intent(MenuUtamaActivity.this, Kuis.class));
                 clickSound();
                 break;
             }

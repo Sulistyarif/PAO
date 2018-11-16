@@ -15,6 +15,9 @@
     <color name="kuning_smooth">#e1dd8f</color>
 
     <color name="downy">#65c6bb</color>
+    
+    <color name="holo_green_light">#7CFC00</color>
+    <color name="holo_red_light">#FF0000</color>
 
 
 </resources>

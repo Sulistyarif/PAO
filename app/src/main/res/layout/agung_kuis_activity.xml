@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    tools:context=".Kuis">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/editbox_background_normal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/soal_ganti"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/soal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:textColor="@android:color/black"
+                        android:text="Soal satu dan lainnya" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="test 1" />
+
+                        <RadioButton
+                            android:id="@+id/b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="test 2" />
+
+                        <RadioButton
+                            android:id="@+id/c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="test 3" />
+
+                        <RadioButton
+                            android:id="@+id/d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="test 4" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hasil_acak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hasil_radio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="TextView"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/kerja_soal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:onClick="next_soal"
+                    android:text="Pertanyaan selanjutnya"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/hasil_nilai"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/editbox_background_normal"
+                android:padding="16dp"
+                android:visibility="gone">
+
+                <TableRow
+                    android:id="@+id/warna_jawab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Salah"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8."
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Salah"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab17"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18."
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab19"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="19. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab21"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="21. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab22"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab23"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="23. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab24"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/warna_jawab25"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25. "
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/jawab25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Benar"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

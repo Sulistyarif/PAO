@@ -33,6 +33,8 @@
     <string name="isi_kd4">Memahami proses mesin konversi energi.</string>
     <string name="isi_kd5">Memahami klasifikasi engine.</string>
     <string name="isi_kd6">Memahami cara kerja engine 2 dan 4 langkah.</string>
+    <string name="isi_kd7">Memahami cara kerja motor listrik</string>
+    <string name="isi_kd8">Memahami cara kerja generator listrik</string>
 
     <!--sub bab materi-->
     <string name="header_menu_subbab">Pilih Materi yang Akan Dipelajari</string>
@@ -476,5 +478,8 @@
         <item>Menu Tentang berisi penjelasan aplikasi dan informasi pengembang aplikasi</item>
         <item>Menu Bantuan berisi penjelasan menu yang ada</item>
     </string-array>
+
+    <color name="jawaban_benar">@android:color/holo_green_light</color>
+    <color name="jawaban_salah">@android:color/holo_red_light</color>
 
 </resources>

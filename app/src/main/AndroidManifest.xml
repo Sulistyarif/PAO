@@ -30,6 +30,7 @@
         <activity android:name=".AboutDevActivity"></activity>
         <activity android:name=".BantuanActivity"/>
         <activity android:name=".PetaKonsepActivity"/>
+        <activity android:name=".Kuis"/>
     </application>
 
 </manifest>
