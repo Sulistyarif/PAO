@@ -56,7 +56,7 @@ public class ListSubbabAdapter extends BaseAdapter {
         ivSubbab = (ImageView)v.findViewById(R.id.ivSubBab);
 
         tvSubbab.setText(listSubbab[i]);
-        ivSubbab.setImageDrawable(activity.getResources().getDrawable(R.drawable.icon_buku));
+        ivSubbab.setImageDrawable(activity.getResources().getDrawable(R.drawable.icon_quiz));
 
         tvSubbab.setEllipsize(TextUtils.TruncateAt.MARQUEE);
         tvSubbab.setSingleLine(true);

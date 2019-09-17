@@ -21,9 +21,9 @@ public class TentangSayaActivity extends AppCompatActivity implements View.OnCli
     ImageView ivBack, ivHome;
     CircleImageView ivFb, ivTwitter, ivWA, ivInsta;
     Button aboutDev;
-    String fbURL = "https://www.facebook.com/kfsetyabudi";
-    String fbPageID = "kfsetyabudi";
-    String instaURL = "https://www.instagram.com/vebriano_/";
+    String fbURL = "https://www.facebook.com/Radenmazvetteldiningratan";
+    String fbPageID = "Radenmazvetteldiningratan";
+    String instaURL = "https://www.instagram.com/mfadholi_/";
     TextView tvHeader;
 
     @Override
@@ -96,7 +96,7 @@ public class TentangSayaActivity extends AppCompatActivity implements View.OnCli
                 break;
             }
             case R.id.ivWa:{
-                Intent linkWa = new Intent(Intent.ACTION_VIEW, Uri.parse("https://wa.me/6285701150020/?text=Assalamualaikum+mas"));
+                Intent linkWa = new Intent(Intent.ACTION_VIEW, Uri.parse("https://wa.me/6285701058308/?text=Halo+mas"));
                 clickSound();
                 startActivity(linkWa);
                 break;

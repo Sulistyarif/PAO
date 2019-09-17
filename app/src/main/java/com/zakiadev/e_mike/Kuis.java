@@ -14,35 +14,37 @@ import android.widget.Toast;
 
 public class Kuis extends AppCompatActivity {
     String soal_jawab[][] =
-            {{"Perubahan energi satu ke bentuk energi lain","Perubahan energi mekanik menjadi listrik"," energi matahari menjadi otot","Perubahan energi otot menjadi gerak","Yang di maksud dengan konversi energi adalah ..."},
-            {"Motor pembakaran luar","Motor pembakaran dalam","Motor bakar","Motor diesel","Mesin yang memanfaatkan fluida kerja/gas panas hasil pembakaran, di mana antara medium yang memanfaatkan fluida kerjanya tidak dipisahkan oleh dinding pemisah adalah ..."},
-            {"Motor 2 tak","Motor wankel","Motor bensin","Motor diesel","Motor yang memerlukan dua langkah torak dengan satu putaran poros engkol untuk menghasilkan tenaga disebut ..."},
-            {"Motor 4 tak","Motor wankel","Motor bensin","Motor 2 tak","Motor yang memerlukan empat langkah piston dengan dua putran poros engkol untuk menghasilkan tenaga disebut ..."},
-            {"Langkah buang","Langkah hisap","Langkah kompresi","Langkah usaha","Pada motor 4 tak, 4 silinder dengan FO: 1-3-4-2, saat silinder satu sedang langkah kompresi maka silinder tiga sedang langkah ..."},
+            {{"hands tools","power tools","special service tools","workshop equipment","Alat Bantu yang memudahkan pekerjaan manusia, dalam pengoprasiannya menggunakan tenaga manusia merupakan pengertian dari ..."},
+            {"power tools","hands tools","special service tools","workshop equipment","Peralatan yang sumber tenaganya bukan dari tenaga manusia, tetapi tenaga menggunakan listrik atau tenaga pneumatis (gas) merupakan pengertian dari ..."},
+            {"workshop equipment","special service tools","power tools","hands tools","Berbagai kelengkapan yg digunakan dibengkel yg merupakan perlengkapan penting namun bukan perlengkepan utama dalam perbaiakn namun sebagi perlengkapan pendukung dalam perbaikan yaitu pengrtian dari ..."},
+            {"special service tools","power tools","hands tools","workshop equipment","alat yang digunakan untuk pembongkaran maupun pemasangan komponen-komponen otomotif yang tidak dapat dilakukan dengan kunci-kunci biasa dan tidak dengan cara yg normal merupakan pengertian dari ..."},
+            {"obeng, tang, kunci pas, kunci allen","kunci allen, kunci pas, tang, air drill","air drill, gear holder, impact wrench, obeng","bike lift, air drill, obeng, tang","yang merupakan jenis-jenis handstools yaitu ..."},
 
-            {"Kedua katup tertutup","Katup masuk terbuka","Katup buang terbuka","Poros engkol berputar 540 derajat","Yang termasuk langkah kompresi motor 4 tak adalah ..."},
-            {"180","0","360","540","Pada motor 4 tak, akhir langkah kompresi poros engkol berputar sebanyak ... derajat"},
-            {"Pena torak","Cincin torak","Batang torak","Bantalan torak","Komponen yang berfungsi menghubungkan torak dengan batang torak adalah ..."},
-            {"Poros engkol","Poros nok","Pena torak","Silinder","Untuk merubah gerak bolak-balik torak menjadi gerak putar pada sumbu utama motor diperlukan ..."},
-            {"Udara murni","Campuran udara - bahan bakar","Air","Bensin","Pada motor diesel, saat langkah hisap yang diisap adalah"},
+            {"valve adjuster, gear holder, torque wrench, crimping plier","kunci allen, kunci pas, tang, air drill","obeng, tang, kunci pas, kunci allen","bike lift, air drill, nipple spaner, valve adjuster","yang merupakan jenis-jenis special service tools yaitu ..."},
+            {"bike lift, recoil hose, air gun, spring balancer","valve adjuster, gear holder, torque wrench, crimping plier","obeng, tang, kunci pas, kunci allen","bike lift, air drill, nipple spaner, valve adjuster","yang merupakan jenis-jenis workshop equipment yaitu ..."},
+            {"electric drill, air drill, impact wrench, power grinder","obeng, tang, kunci pas, kunci allen","valve adjuster, gear holder, torque wrench, crimping plier","bike lift, recoil hose, air gun, spring balancer","yang merupakan jenis-jenis power tools yaitu ..."},
+            {"bike lift","recoil hose","air gun","kunci pas","alat yang berfungsi mengangkat Sepeda Motor pada saat service adalah ..."},
+            {"meja kerja","pyping system","bike lift","recoil hose","tempat kerja bangku dan penempatan dari mesin bor duduk, gerinda dan ragum ..."},
 
-            {"Karburator","Tangki","Turbocharger","Nozel","Bagian pokok sebuah motor bensin yang berfungsi mencampur bahan bakar dengan udara untuk keperluan pembakaran adalah"},
-            {"Piston","Busi","Intake manifold","Exhaust manifold","Pada motor bensin, kepala silinder berfungsi sebagai tempat dudukan komponen berikut ini, kecuali ..."},
-            {"Air filter","Oil filter","Water filter","Fuel filter","Yang berfungsi untuk menahan kotoran yang tercampur dalam udara untuk keperluan pembakaran adalah ..."},
-            {"1 kg bensin diperlukan 12 kg udara","1 liter oli untuk 1 liter air","1 kg udara untuk 12 kg air","1 kg udara diperlukan 12 kg bensin","Campuran bahan bakar dan udara dengan perbandingan 1 : 12 artinya ..."},
-            {"Cincin kompresi","Ruang engkol","Pena torak","Cincin pelumas","Komponen yang berfungsi untuk mencegah kebocoran antara dinding silinder dengan torak adalah ..."},
+            {"pyping system","recoil hose","bike lift","meja kerja","alat yang berfungsi untuk Menyalurkan udara bertekanan dari kompresor ke masing-masing pit kerja ..."},
+            {"menahan fly wheel dan rumah kopling ganda (OAPC)","Menahan fly wheel atau rumah kopling sekunder (OCC)","menahan pergerakan roda gigi rumah kopling (OCC) dan gigi primer/OAPC","Menahan OCC saat memasang dan melepas lock nut kopling","Fungsi SST Universal Holder yaitu ..."},
+            {"Menahan fly wheel atau rumah kopling sekunder (OCC)","menahan fly wheel dan rumah kopling ganda (OAPC)","menahan pergerakan roda gigi rumah kopling (OCC) dan gigi primer/OAPC","Menahan OCC saat memasang dan melepas lock nut kopling","Fungsi SST Fly Wheel Holder yaitu ..."},
+            {"menahan pergerakan roda gigi rumah kopling (OCC) dan gigi primer/OAPC","menahan fly wheel dan rumah kopling ganda (OAPC)","Menahan fly wheel atau rumah kopling sekunder (OCC)","Menahan OCC saat memasang dan melepas lock nut kopling","Fungsi SST Gear Holder yaitu ..."},
+            {"melepas mur pengunci pada kopling","menahan fly wheel dan rumah kopling ganda (OAPC)","Menahan fly wheel atau rumah kopling sekunder (OCC)","Menahan OCC saat memasang dan melepas lock nut kopling","Fungsi SST Lock Nut Wrench yaitu ..."},
 
-            {"Roda gila","Tekanan oli yang kental","Karburator","Poros engkol","Komponen mesin yang berfungsi untuk menyimpan tenaga selama motor tidak menghasilkan tenaga adalah ..."},
-            {"Camshaft","Crank shaft","Connecting rod","Piston pin","Yang berfungsi untuk membuka katup-katup masuk dan buang yang digerakkan oleh timing pengapian melalui V-belt atau rantai yaitu ..."},
-            {"Mempercepat pendinginan","Meredam getaran","Mencegah karat","Penahan panas","Fungsi sirip-sirip pada kepala silinder adalah ..."},
-            {"Kepala silinder","Batang torak","Poros engkol","Blok silinder","Pengabut (injector) pada motor diesel dipasang pada ..."},
-            {"Motor Sinkron","Motor shunt","Motor separately exited","motor self exited","Pada umumnya motor AC dibagi menjadi dua, salah satunya adalah ..."},
+//            {"Roda gila","Tekanan oli yang kental","Karburator","Poros engkol","Komponen mesin yang berfungsi untuk menyimpan tenaga selama motor tidak menghasilkan tenaga adalah ..."},
+//            {"Camshaft","Crank shaft","Connecting rod","Piston pin","Yang berfungsi untuk membuka katup-katup masuk dan buang yang digerakkan oleh timing pengapian melalui V-belt atau rantai yaitu ..."},
+//            {"Mempercepat pendinginan","Meredam getaran","Mencegah karat","Penahan panas","Fungsi sirip-sirip pada kepala silinder adalah ..."},
+//            {"Kepala silinder","Batang torak","Poros engkol","Blok silinder","Pengabut (injector) pada motor diesel dipasang pada ..."},
+//            {"Motor Sinkron","Motor shunt","Motor separately exited","motor self exited","Pada umumnya motor AC dibagi menjadi dua, salah satunya adalah ..."},
+//
+//            {"Transistor","Generator","Dinamo","Trafo","Di bawah ini alat yang tidak menerapkan prinsip induksi elektromagnetik ..."},
+//            {"Generator","Akumulator","Transistor","Resistor","Alat yang dapat mengubah energi mekanik menjadi energi listrik disebut ..."},
+//            {"Altenator","Dinamo","Akumulator","Resistor","Generator yang menghasilkan arus AC biasa disebut dengan ..."},
+//            {"Generator 3-phase","Generator shunt","Generator compound","Generator penguat terpisah","Generator AC ditinjau dari sumbernya dibagi menjadi dua, salah satunya adalah ..."},
+//            {"Searah","Kuat","Bolak-balik","Lemah","Dinamo yang terpasang pada roda sepeda akan menghasilkan arus ..."}
 
-            {"Transistor","Generator","Dinamo","Trafo","Di bawah ini alat yang tidak menerapkan prinsip induksi elektromagnetik ..."},
-            {"Generator","Akumulator","Transistor","Resistor","Alat yang dapat mengubah energi mekanik menjadi energi listrik disebut ..."},
-            {"Altenator","Dinamo","Akumulator","Resistor","Generator yang menghasilkan arus AC biasa disebut dengan ..."},
-            {"Generator 3-phase","Generator shunt","Generator compound","Generator penguat terpisah","Generator AC ditinjau dari sumbernya dibagi menjadi dua, salah satunya adalah ..."},
-            {"Searah","Kuat","Bolak-balik","Lemah","Dinamo yang terpasang pada roda sepeda akan menghasilkan arus ..."}};
+            };
 
     private TextView hasil_jawab;
     private RadioButton a;
@@ -51,7 +53,7 @@ public class Kuis extends AppCompatActivity {
     private RadioButton d;
     private TextView soal;
 
-    int Pertanyaan[] ={100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100};
+    int Pertanyaan[] ={100,100,100,100,100,100,100,100,100,100,100,100,100,100,100};
     String hasil_acak_text = "";
     private double random;
     private int hasil_acak;
@@ -64,8 +66,8 @@ public class Kuis extends AppCompatActivity {
     private Button kerja_soal;
     private LinearLayout soal_ganti;
     private TableLayout hasil_nilai;
-    private TextView[] jawaban_nilai = new TextView[25];
-    private TableRow[] warna_hasil = new TableRow[25];
+    private TextView[] jawaban_nilai = new TextView[15];
+    private TableRow[] warna_hasil = new TableRow[15];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,16 +102,7 @@ public class Kuis extends AppCompatActivity {
         jawaban_nilai[12] = (TextView)findViewById(R.id.jawab13);
         jawaban_nilai[13] = (TextView)findViewById(R.id.jawab14);
         jawaban_nilai[14] = (TextView)findViewById(R.id.jawab15);
-        jawaban_nilai[15] = (TextView)findViewById(R.id.jawab16);
-        jawaban_nilai[16] = (TextView)findViewById(R.id.jawab17);
-        jawaban_nilai[17] = (TextView)findViewById(R.id.jawab18);
-        jawaban_nilai[18] = (TextView)findViewById(R.id.jawab19);
-        jawaban_nilai[19] = (TextView)findViewById(R.id.jawab20);
-        jawaban_nilai[20] = (TextView)findViewById(R.id.jawab21);
-        jawaban_nilai[21] = (TextView)findViewById(R.id.jawab22);
-        jawaban_nilai[22] = (TextView)findViewById(R.id.jawab23);
-        jawaban_nilai[23] = (TextView)findViewById(R.id.jawab24);
-        jawaban_nilai[24] = (TextView)findViewById(R.id.jawab25);
+
 
         warna_hasil[0]=(TableRow)findViewById(R.id.warna_jawab1);
         warna_hasil[1]=(TableRow)findViewById(R.id.warna_jawab2);
@@ -126,19 +119,10 @@ public class Kuis extends AppCompatActivity {
         warna_hasil[12]=(TableRow)findViewById(R.id.warna_jawab13);
         warna_hasil[13]=(TableRow)findViewById(R.id.warna_jawab14);
         warna_hasil[14]=(TableRow)findViewById(R.id.warna_jawab15);
-        warna_hasil[15]=(TableRow)findViewById(R.id.warna_jawab16);
-        warna_hasil[16]=(TableRow)findViewById(R.id.warna_jawab17);
-        warna_hasil[17]=(TableRow)findViewById(R.id.warna_jawab18);
-        warna_hasil[18]=(TableRow)findViewById(R.id.warna_jawab19);
-        warna_hasil[19]=(TableRow)findViewById(R.id.warna_jawab20);
-        warna_hasil[20]=(TableRow)findViewById(R.id.warna_jawab21);
-        warna_hasil[21]=(TableRow)findViewById(R.id.warna_jawab22);
-        warna_hasil[22]=(TableRow)findViewById(R.id.warna_jawab23);
-        warna_hasil[23]=(TableRow)findViewById(R.id.warna_jawab24);
-        warna_hasil[24]=(TableRow)findViewById(R.id.warna_jawab25);
+
 
         for(int a=0; a<Pertanyaan.length; a++){
-            random = Math.random()*25;
+            random = Math.random()*15;
             hasil_acak = (int) random;
             while(hasil_acak==Pertanyaan[1] ||
                     hasil_acak==Pertanyaan[2] ||
@@ -154,19 +138,9 @@ public class Kuis extends AppCompatActivity {
                     hasil_acak==Pertanyaan[12] ||
                     hasil_acak==Pertanyaan[13] ||
                     hasil_acak==Pertanyaan[14] ||
-                    hasil_acak==Pertanyaan[15] ||
-                    hasil_acak==Pertanyaan[16] ||
-                    hasil_acak==Pertanyaan[17] ||
-                    hasil_acak==Pertanyaan[18] ||
-                    hasil_acak==Pertanyaan[19] ||
-                    hasil_acak==Pertanyaan[20] ||
-                    hasil_acak==Pertanyaan[21] ||
-                    hasil_acak==Pertanyaan[22] ||
-                    hasil_acak==Pertanyaan[23] ||
-                    hasil_acak==Pertanyaan[24] ||
                     hasil_acak==Pertanyaan[0]){
 
-                random = Math.random()*25;
+                random = Math.random()*15;
                 hasil_acak = (int) random;
             }
             Pertanyaan[a] = hasil_acak;
@@ -203,7 +177,7 @@ public class Kuis extends AppCompatActivity {
         b.setText(soal_jawab[Pertanyaan[indek_soal]][pilih_abcd[1]]);
         c.setText(soal_jawab[Pertanyaan[indek_soal]][pilih_abcd[2]]);
         d.setText(soal_jawab[Pertanyaan[indek_soal]][pilih_abcd[3]]);
-        hasil_acak_text_tampil.setText((indek_soal+1)+" / 25");
+        hasil_acak_text_tampil.setText((indek_soal+1)+" / 15");
     }
 
     public void onRadioButtonClicked(View view) {
@@ -233,7 +207,7 @@ public class Kuis extends AppCompatActivity {
     }
 
     public void next_soal(View view){
-        if(soal_awal<25) {
+        if(soal_awal<15) {
             if(hasil_jawab.getText().toString().trim().equalsIgnoreCase(soal_jawab[Pertanyaan[soal_awal]][0])){
                 Toast.makeText(getBaseContext(),"Jawaban benar", Toast.LENGTH_SHORT).show();
                 jawaban_nilai[soal_awal].setText("Benar");
@@ -251,7 +225,7 @@ public class Kuis extends AppCompatActivity {
                 kerja_soal.setText("Cek hasil");
             }
             soal_awal++;
-            if(soal_awal<25) {
+            if(soal_awal<15) {
                 kuis_tes(soal_awal);
             }
         }else {

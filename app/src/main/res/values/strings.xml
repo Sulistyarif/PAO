@@ -2,8 +2,8 @@
     <string name="app_name">PAO</string>
 
     <!--splash screen-->
-    <string name="splash_screen_tv">e-MiKE</string>
-    <string name="splash_screen_tv_explain">E-Modul Mesin Konversi Energi</string>
+    <string name="splash_screen_tv">PAO</string>
+    <string name="splash_screen_tv_explain">Pengenalan Alat Otomotif</string>
 
     <!--menu utama (menut)-->
     <string name="menut_1">KI/KD</string>
@@ -23,51 +23,47 @@
     <string name="header_ki4">KI 4 (Keterampilan)</string>
     <string name="isi_ki1">Menghargai dan menghayati ajaran agama yang dianutnya.</string>
     <string name="isi_ki2">Menghargai dan menghayati perilaku jujur, disiplin, tanggungjawab, peduli (toleransi, gotong royong), santun, percaya diri, dalam berinteraksi secara efektif dengan lingkungan sosial dan alam dalam jangkauan pergaulan dan keberadaannya.</string>
-    <string name="isi_ki3">Memahami, menerapkan, menganalisis, dan mengevaluasi tentang pengetahuan faktual, konseptual, operasional dasar, dan metakognitif sesuai dengan bidang dan lingkup kerja Dasar dasar Teknik Otomotif. Pada tingkat teknis, spesifik, detil, dan kompleks, berkenaan dengan ilmu pengetahuan, teknologi, seni, budaya, dan humaniora dalam konteks pengembangan potensi diri sebagai bagian dari keluarga, sekolah, dunia kerja, warga masyarakat nasional, regional, dan internasional</string>
+    <string name="isi_ki3">Memahami, menerapkan dan menganalisis pengetahuan faktual, konseptual dan prosedural berdasarkan rasa ingin tahunya tentang ilmu pengetahuan, teknologi, seni, budaya, dan humaniora dalam wawasan kemanusiaan, kebangsaan, kenegaraan, dan peradaban terkait penyebab fenomena dan kejadian dalam bidang kerja yang spesifik untuk memecahkan masalah sesuai dengan bidang dan lingkup kerja dasar teknik otomotif.</string>
     <string name="isi_ki4">Mengolah, menalar, dan menyaji dalam ranah konkret dan ranah abstrak  terkait dengan pengembangan dari yang dipelajarinya di sekolah secara mandiri, dan mampu melaksanakan tugas spesifik di bawah pengawasan langsung.</string>
     <string name="header_kd">Kompetensi Dasar</string>
     <string name="header_kd3">KD 3.1</string>
-    <string name="header_kd4">KD 3.4</string>
-    <string name="header_kd5">KD 3.5</string>
-    <string name="header_kd6">KD 3.6</string>
-    <string name="isi_kd4">Memahami proses mesin konversi energi.</string>
-    <string name="isi_kd5">Memahami klasifikasi engine.</string>
-    <string name="isi_kd6">Memahami cara kerja engine 2 dan 4 langkah.</string>
-    <string name="isi_kd7">Memahami cara kerja motor listrik</string>
+    <string name="header_kd4">KD 3.1</string>
+    <string name="header_kd5">KD 3.2</string>
+    <string name="header_kd6">KD 3.3</string>
+    <string name="isi_kd4">Mengklasifikasi jenis-jenis hand tools</string>
+    <string name="isi_kd5">Mengklasifikasi jenis-jenis power tools</string>
+    <string name="isi_kd6">Mengklasifikasi jenis-jenis special service tools</string>
+    <string name="isi_kd7">Mengklasifikasi jenis-jenis workshop equipment </string>
     <string name="isi_kd8">Memahami cara kerja generator listrik</string>
 
     <!--sub bab materi-->
     <string name="header_menu_subbab">Pilih Materi yang Akan Dipelajari</string>
     <string-array name="subbab_materi">
         <item>Peta Konsep</item>
-        <item>Materi 1: Prinsip MKE</item>
-        <item>Materi 2: Motor Bakar</item>
-        <item>Materi 3: Motor Listrik</item>
-        <item>Materi 4: Generator Listrik</item>
+        <item>Materi 1: Hands Tools</item>
+        <item>Materi 2: Power Tools</item>
+        <item>Materi 3: Workshop Equipment</item>
+        <item>Materi 4: Special Service Tools</item>
     </string-array>
 
     <string-array name="subbab_materi1">
-        <item>Proses MKE</item>
-        <item>Macam Energi</item>
-        <item>Sifat Energi</item>
+        <item>Pengertian</item>
+        <item>Mengklasifikasikan jenis-jenis hand tools</item>
     </string-array>
 
     <string-array name="subbab_materi2">
-        <item>Ditinjau dari Proses Pembakarannya</item>
-        <item>Ditinjau dari Bahan Bakarnya</item>
-        <item>Ditinjau dari Proses Kerjanya</item>
-        <item>Perhitungan Motor Bakar</item>
+        <item>Pengertian</item>
+        <item>mengklasifikasikan jenis-jenis power tools</item>
     </string-array>
 
     <string-array name="subbab_materi3">
-        <item>Prinsip Kerja Motor Listrik</item>
-        <item>Jenis Motor Listrik</item>
+        <item>Pengertian</item>
+        <item>Mengklasifikasikan jenis-jenis workshop equipment</item>
     </string-array>
 
     <string-array name="subbab_materi4">
-        <item>Generator AC</item>
-        <item>Generator DC</item>
-        <item>Penggunaan Generator</item>
+        <item>Pengertian</item>
+        <item>Mengklasifikasikan jenis-jenis special service tools</item>
     </string-array>
 
 
@@ -132,63 +128,58 @@
 
     <!--daftar glossarium-->
     <string-array name="parent_glossarium">
-        <item>Akselerasi </item>
-        <item>Combustion Chamber</item>
-        <item>Compression Ratio</item>
-        <item>Daya </item>
-        <item>Deselerasi </item>
-        <item>Dieseling </item>
-        <item>Displacement </item>
-        <item>Energi </item>
-        <item>Ergonomis </item>
-        <item>Flywheel </item>
-        <item>Fuel Injection</item>
-        <item>Fuse </item>
-        <item>Hertz (Hz)</item>
-        <item>Ignition </item>
-        <item>Joule </item>
-        <item>Kecepatan rata-rata </item>
-        <item>Knocking </item>
-        <item>Multimeter </item>
-        <item>Overhaul</item>
-        <item>Oversize</item>
-        <item>Porting </item>
+        <item>AIR SUPPLY </item>
+        <item>BEARING</item>
+        <item>EXTENTION</item>
+        <item>FITTING </item>
+        <item>FLEKSIBEL </item>
+        <item>FLYWHEEL </item>
+        <item>HANDLE </item>
+        <item>HEXAGONAL </item>
+        <item>HP </item>
+        <item>KLEP </item>
+        <item>KOMPRESOR</item>
+        <item>KOPLING </item>
+        <item>KOPLING GANDA</item>
+        <item>MOMENT </item>
+        <item>MOTOR </item>
+        <item>POROS ENGKOL </item>
+        <item>POWER SOURCE </item>
+        <item>PROPELLER SHAFT </item>
+        <item>RAGUM</item>
+        <item>REAMER</item>
+        <item>RPM </item>
         <item>RPM</item>
-        <item>Switch </item>
-        <item>Throotle Valve</item>
-        <item>Torak </item>
-        <item>Turbulensi </item>
-        <item>Valve </item>
+        <item>SHAFT BALANCER </item>
+        <item>TORAK</item>
+        <item>TORQUE </item>
     </string-array>
 
     <string-array name="child_glossarium">
-        <item>Penambahan Kecepatan melalui pemutaran handel gas/kecepatan lari awal kendaraan.</item>
-        <item>Ruang bakar</item>
-        <item>Jumlah volume ruang bakar dan volume silinder dibagi dengan volume ruang bakar</item>
-        <item>Kemampuan untuk melakukan usaha tiap satu satuan waktu.</item>
-        <item>Penurunan Kecepatan melalui pemutaran handel gas.</item>
-        <item>Ledakan campuran udara dan minyak pelumas dalam ruang kompresi atau bagian lain dari sistem udara</item>
-        <item>Volume total silinder</item>
-        <item>Kemampuan untuk melakukan usaha</item>
-        <item>Bisa dijangkau dengan mudah</item>
-        <item>Gunanya untuk meneruskan putaran kruk as agar ia tidak mudah berhenti.</item>
-        <item>Sistim pencampuran bahan bakar dengan udara pada motor bensin dengan cara menggunakan pompa yang menginjeksikan (menyemprotkan) bahan bakar kedalam intake manifold melalui injector.</item>
-        <item>Sekering</item>
-        <item>Satuan frekuensi, 1 Hz = 1 siklus per detik.</item>
-        <item>Penyalaan api pembakaran. Berbeda dengan diesel yang menyalakan pembakaran bahan bakar dengan sistem panas hasil kompresi, system ignition menyalakan pembakaran dengan menangkap percikan api yang dibuat melalui rangkaian antara pembangkit tenaga accumulator (aki), kumparan, dan busi sebagai pemicu.</item>
-        <item>Satuan usaha dalam SI, besarnya sama dengan kerja yang dilakukan oleh gaya 1 Newton untuk memindahkan benda sejauh 1 meter.</item>
-        <item>Perpindahan suatu benda dibagi waktu yang diperlukan benda tersebut untuk berpindah</item>
-        <item>Waktu pembakaran tertunda yang panjang, dan tekanan kompresi tinggi sekali yang mengakibatkan putaran mesin kasar</item>
-        <item>Alat pengukur beberapa satuan listrik, Volt, Ampere, Ohm.</item>
-        <item>Turun mesin</item>
-        <item>Pembesaran diamater liner pada cilinder</item>
-        <item>Langkah untuk mencari efisiensi volumetrik yang ideal buat gas bakar</item>
-        <item>Rotation Per Minute atau Rotasi putaran mesin per menit</item>
-        <item>Sakelar, alat untuk menyalakan atau mematikan peralatan listrik.</item>
-        <item>Valve yang berfungsi untuk mengatur RPM mesin</item>
-        <item>Piston atau Seher</item>
-        <item>Getaran atau Goncangan akibat kinerja mesin</item>
-        <item>Katup atau Klep</item>
+        <item>pemasukan udara</item>
+        <item>Bantalan atau elemen mesin yang membatasi gerak relatif antara dua komponen</item>
+        <item>Sambungan atau perpanjangan </item>
+        <item>Dudukan atau penyalur arus listrik</item>
+        <item>Mudah dibengkokan atau lentur</item>
+        <item>Gunanya untuk meneruskan putaran poros engkol agar ia tidak mudah berhenti</item>
+        <item>Gagang atau pegangan untuk digenggam</item>
+        <item>Senuah segibanyak yang dengan enam sisi dan enam titik sudut</item>
+        <item>Satuan tenaga kuda untuk satuan tenaga pada mesin</item>
+        <item>Sebuah alat untuk mengatur, mengendalikan atau mengarahkan sebuah fluida dengan membuka, menutup, mengecilkan atau memperbesar arusnya</item>
+        <item>Mesin untuk memampatkan atau meningkatkan tekanan fluida gas atau udara </item>
+        <item>Meneruskan atau memutuskan putaran dari poros engkol ke tranmisi atau preseneleng ketika mulai atau mesin memindahkan gigi atau berhenti</item>
+        <item>kopling yang memiliki dua mekanisme koling pada motor bebek dan matic</item>
+        <item>besaran gaya yang bekerja pada sebuah benda sehingga mengakibatkan benda tersebut berotasi</item>
+        <item>Mesin yang dapat mengubah suatu enrgi menjadi gerak</item>
+        <item>Bagian pada mesin yang mengubah gerak verikal / horizontal dari piston menjadi gerak rotasi</item>
+        <item>Sebuah pernati elektronik sebagai sumber daya untuk piranti lain</item>
+        <item>Meneruskan tenaga dari tranmisi ke diferential</item>
+        <item>Alat penjejepit untuk menjepit benda kerja di kikir, dipahat, digergaji dan lain-lain</item>
+        <item>Alat potong untung memperbesar dan memperhalus permukaan lubang </item>
+        <item>Rotasi putaran mesin permenit </item>
+        <item>Suatu komponen peredam getaran mesin</item>
+        <item>Piston atau seher</item>
+        <item>Kemampuan daya mesin untuk memutar roda dalam keadaan diam hingga bergerak</item>
     </string-array>
 
     <!--quiz, soal dibedakan, jawaban 1, 2, 3, 4, 5 dibedakan masing2 disimpan diarray sendiri-->
@@ -427,12 +418,12 @@
 
     <!--menu tentang-->
     <string name="tentang_saya">Tentang saya</string>
-    <string name="nama">Kurnia Feby Setyabudi</string>
+    <string name="nama">Muhammad Fadholi</string>
     <string name="header_tentang_aplikasi">Tentang Aplikasi</string>
     <string name="header_referensi_materi">Referensi Materi</string>
-    <string name="isi_saya">merupakan mahasiswa Universitas Negeri Yogyakarta program studi Pendidikan Teknik Otomotif-S1 yang sedang berjuang menyelesaikan skripsi dengan media pembelajaran ini.</string>
-    <string name="isi_tentang_aplikasi">e-MiKE merupakan media pembelajaran berbasis android untuk mata pelajaran Teknologi Otomotif Dasar kelas X yang berfokus pada materi Mesin Konversi Energi. Dengan adanya aplikasi ini pengguna diharapkan bisa belajar materi mesin konversi energi dimanapun dan kapanpun.</string>
-    <string name="isi_referensi_materi">Materi didalam media pembelajaran ini diambil dari buku <b><i>Teknologi Dasar Otomotif Program Keahlian Teknik Otomotif untuk SMK/MAK</i></b> terbitan Mediatama, buku <b><i>Konversi Energi</i></b> terbitan Kementrian Pendidikan dan Kebudayaan Republik Indonesia, buku <b><i>Teknologi Dasar Otomotif untuk SMK/MAK</i></b>, terbitan Kementrian Pendidikan dan Kebudayaan Republik Indonesia, dan buku <b><i>Teknologi Dasar Otomotif untuk SMK dan MAK</i></b> terbitan Armico. Lalu untuk video mengambil referensi dari Youtube.</string>
+    <string name="isi_saya">Merupakan Mahasiswa Universitas Negeri Yogyakarta Program Studi Pendidikan Teknik Otomotif-S1 yang sedang berjuang menyelesaikan skripsi dengan media pembelajaran berbasis android ini.</string>
+    <string name="isi_tentang_aplikasi">PAO ( Pengenalan Alat Otomotif ) merupakan media pembelajaran berbbasis andrid untuk mata pelajaran Pekerjaan Dasar Otomotif Kelas X TSM yang berfokus pada materi Hand Tools, Power Tools, Special Service Tools, dan Workshop Equipment. Dengan adanya media ini diharapkan pengguna dapat belajar materi tersebut dimanapun dan kapanpun.</string>
+    <string name="isi_referensi_materi">Materi didalam media pembelajaran ini diambil dari buku Teknologi Dasar Otomotif untuk SMK/MAK terbitan kentrian pendidikan dan kebudayaan,  buku Teknologi Dasar Otomotif Untuk SMK dan MAK terbitan amico, dan buku Tool PMT-1 AHTC ( Astra Honda Training Center ) Pelatihan Mekanik Tingkat Satu. </string>
 
     <!--confirm on exit-->
     <string name="dialog_exit">Apakah Anda Yakin Akan Keluar ?</string>

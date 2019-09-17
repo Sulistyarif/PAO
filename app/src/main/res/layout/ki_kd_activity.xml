@@ -85,6 +85,7 @@
                 android:layout_height="match_parent"
                 android:background="@color/lebihMudaTextView"
                 android:orientation="horizontal"
+                android:layout_marginTop="5dp"
                 android:weightSum="10">
 
                 <ImageView
@@ -129,6 +130,7 @@
                 android:layout_height="match_parent"
                 android:background="@color/lebihMudaTextView"
                 android:orientation="horizontal"
+                android:layout_marginTop="5dp"
                 android:weightSum="10">
 
                 <ImageView
@@ -173,6 +175,7 @@
                 android:layout_height="match_parent"
                 android:background="@color/lebihMudaTextView"
                 android:orientation="horizontal"
+                android:layout_marginTop="5dp"
                 android:weightSum="10">
 
                 <ImageView
@@ -217,6 +220,7 @@
                 android:layout_height="match_parent"
                 android:background="@color/lebihMudaTextView"
                 android:orientation="horizontal"
+                android:layout_marginTop="5dp"
                 android:weightSum="10">
 
                 <ImageView
@@ -233,11 +237,11 @@
                     android:layout_marginTop="10dp"
                     android:layout_weight="8"
                     android:background="@color/lebihMudaTextView"
-                    android:paddingBottom="10dp"
-                    android:paddingEnd="5dp"
                     android:paddingStart="5dp"
                     android:paddingTop="10dp"
-                    android:text="KD 3.7"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="10dp"
+                    android:text="KD 3.4"
                     android:textColor="#111"
                     android:textSize="20sp" />
 
@@ -261,6 +265,7 @@
                 android:layout_height="match_parent"
                 android:background="@color/lebihMudaTextView"
                 android:orientation="horizontal"
+                android:visibility="gone"
                 android:weightSum="10">
 
                 <ImageView
@@ -277,10 +282,10 @@
                     android:layout_marginTop="10dp"
                     android:layout_weight="8"
                     android:background="@color/lebihMudaTextView"
-                    android:paddingBottom="10dp"
-                    android:paddingEnd="5dp"
                     android:paddingStart="5dp"
                     android:paddingTop="10dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="10dp"
                     android:text="KD 3.8"
                     android:textColor="#111"
                     android:textSize="20sp" />
@@ -292,12 +297,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/borderkikd"
-                android:paddingBottom="8dp"
-                android:paddingEnd="5dp"
                 android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="8dp"
                 android:text="@string/isi_kd8"
                 android:textAlignment="gravity"
-                android:textColor="#111" />
+                android:textColor="#111"
+                android:visibility="gone" />
 
         </LinearLayout>
     </ScrollView>

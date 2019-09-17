@@ -43,7 +43,7 @@
                     android:layout_width="96dp"
                     android:layout_height="96dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/febri"
+                    android:src="@drawable/foto_profil"
                     app:civ_border_color="#fff"
                     app:civ_border_width="2dp" />
 
@@ -73,6 +73,7 @@
                         android:layout_weight="1"
                         android:padding="15dp"
                         android:src="@drawable/icon_twitte"
+                        android:visibility="gone"
                         app:civ_border_color="#fff"
                         app:civ_border_width="2dp" />
 
