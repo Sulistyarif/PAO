@@ -1,10 +1,14 @@
 package com.zakiadev.e_mike;
 
+import android.content.Intent;
+import android.media.MediaPlayer;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TableLayout;
@@ -16,7 +20,7 @@ public class Kuis extends AppCompatActivity {
     String soal_jawab[][] =
             {{"hands tools","power tools","special service tools","workshop equipment","Alat Bantu yang memudahkan pekerjaan manusia, dalam pengoprasiannya menggunakan tenaga manusia merupakan pengertian dari ..."},
             {"power tools","hands tools","special service tools","workshop equipment","Peralatan yang sumber tenaganya bukan dari tenaga manusia, tetapi tenaga menggunakan listrik atau tenaga pneumatis (gas) merupakan pengertian dari ..."},
-            {"workshop equipment","special service tools","power tools","hands tools","Berbagai kelengkapan yg digunakan dibengkel yg merupakan perlengkapan penting namun bukan perlengkepan utama dalam perbaiakn namun sebagi perlengkapan pendukung dalam perbaikan yaitu pengrtian dari ..."},
+            {"workshop equipment","special service tools","power tools","hands tools","Berbagai kelengkapan yg digunakan dibengkel yg merupakan perlengkapan penting namun bukan perlengkepan utama dalam perbaikan namun sebagi perlengkapan pendukung dalam perbaikan yaitu pengrtian dari ..."},
             {"special service tools","power tools","hands tools","workshop equipment","alat yang digunakan untuk pembongkaran maupun pemasangan komponen-komponen otomotif yang tidak dapat dilakukan dengan kunci-kunci biasa dan tidak dengan cara yg normal merupakan pengertian dari ..."},
             {"obeng, tang, kunci pas, kunci allen","kunci allen, kunci pas, tang, air drill","air drill, gear holder, impact wrench, obeng","bike lift, air drill, obeng, tang","yang merupakan jenis-jenis handstools yaitu ..."},
 
@@ -69,10 +73,15 @@ public class Kuis extends AppCompatActivity {
     private TextView[] jawaban_nilai = new TextView[15];
     private TableRow[] warna_hasil = new TableRow[15];
 
+    ImageView ivBack, ivHome;
+    TextView tvHeader;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.agung_kuis_activity);
+
+        settingActionBar();
 
         hasil_jawab = (TextView) findViewById(R.id.hasil_radio);
         a = (RadioButton) findViewById(R.id.a);
@@ -150,6 +159,43 @@ public class Kuis extends AppCompatActivity {
         hasil_acak_text_tampil.setText(hasil_acak_text);
         Log.d("test data",""+Pertanyaan[0]);
         kuis_tes(soal_awal);
+    }
+
+    private void settingActionBar() {
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+
+        getSupportActionBar().setCustomView(R.layout.custom_toolbar_home);
+        View view = getSupportActionBar().getCustomView();
+
+        ivBack = view.findViewById(R.id.ibBack);
+        ivHome = view.findViewById(R.id.ibHome);
+        tvHeader = view.findViewById(R.id.tvHeaderApp);
+
+        ivBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                clickSound();
+                finish();
+            }
+        });
+
+        ivHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Kuis.this, MenuUtamaActivity.class);
+                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                clickSound();
+                startActivity(i);
+            }
+        });
+
+        tvHeader.setText("Materi");
+    }
+
+    private void clickSound() {
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.click);
+        mp.start();
     }
 
     public void kuis_tes(int indek){

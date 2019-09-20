@@ -4,7 +4,7 @@
     android:id="@+id/cons1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background">
+    android:background="#95a5a6">
 
     <LinearLayout
         android:id="@+id/ll1"
@@ -93,7 +93,7 @@
                         android:layout_weight="1"
                         android:text="@string/menut_1"
                         android:textAlignment="center"
-                        android:textColor="#fff"
+                        android:textColor="#111"
                         android:textStyle="bold"
                         android:textSize="20sp" />
 
@@ -126,7 +126,7 @@
                         android:text="@string/menut_2"
                         android:textStyle="bold"
                         android:textAlignment="center"
-                        android:textColor="#fff"
+                        android:textColor="#111"
                         android:textSize="20sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -165,7 +165,7 @@
                         android:text="@string/menut_4"
                         android:textStyle="bold"
                         android:textAlignment="center"
-                        android:textColor="#fff"
+                        android:textColor="#111"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -197,7 +197,7 @@
                         android:text="@string/menut_5"
                         android:textStyle="bold"
                         android:textAlignment="center"
-                        android:textColor="#fff"
+                        android:textColor="#111"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -238,7 +238,7 @@
                         android:text="@string/menut_6"
                         android:textStyle="bold"
                         android:textAlignment="center"
-                        android:textColor="#fff"
+                        android:textColor="#111"
                         android:textSize="20sp" />
                 </LinearLayout>
 
@@ -269,7 +269,7 @@
                         android:text="@string/menut_7"
                         android:textStyle="bold"
                         android:textAlignment="center"
-                        android:textColor="#fff"
+                        android:textColor="#111"
                         android:textSize="20sp" />
                 </LinearLayout>
 

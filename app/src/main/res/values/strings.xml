@@ -149,7 +149,6 @@
         <item>RAGUM</item>
         <item>REAMER</item>
         <item>RPM </item>
-        <item>RPM</item>
         <item>SHAFT BALANCER </item>
         <item>TORAK</item>
         <item>TORQUE </item>
@@ -163,16 +162,16 @@
         <item>Mudah dibengkokan atau lentur</item>
         <item>Gunanya untuk meneruskan putaran poros engkol agar ia tidak mudah berhenti</item>
         <item>Gagang atau pegangan untuk digenggam</item>
-        <item>Senuah segibanyak yang dengan enam sisi dan enam titik sudut</item>
+        <item>Sebuah segibanyak yang dengan enam sisi dan enam titik sudut</item>
         <item>Satuan tenaga kuda untuk satuan tenaga pada mesin</item>
         <item>Sebuah alat untuk mengatur, mengendalikan atau mengarahkan sebuah fluida dengan membuka, menutup, mengecilkan atau memperbesar arusnya</item>
         <item>Mesin untuk memampatkan atau meningkatkan tekanan fluida gas atau udara </item>
         <item>Meneruskan atau memutuskan putaran dari poros engkol ke tranmisi atau preseneleng ketika mulai atau mesin memindahkan gigi atau berhenti</item>
         <item>kopling yang memiliki dua mekanisme koling pada motor bebek dan matic</item>
         <item>besaran gaya yang bekerja pada sebuah benda sehingga mengakibatkan benda tersebut berotasi</item>
-        <item>Mesin yang dapat mengubah suatu enrgi menjadi gerak</item>
+        <item>Mesin yang dapat mengubah suatu energi menjadi gerak</item>
         <item>Bagian pada mesin yang mengubah gerak verikal / horizontal dari piston menjadi gerak rotasi</item>
-        <item>Sebuah pernati elektronik sebagai sumber daya untuk piranti lain</item>
+        <item>Sebuah piranti elektronik sebagai sumber daya untuk piranti lain</item>
         <item>Meneruskan tenaga dari tranmisi ke diferential</item>
         <item>Alat penjejepit untuk menjepit benda kerja di kikir, dipahat, digergaji dan lain-lain</item>
         <item>Alat potong untung memperbesar dan memperhalus permukaan lubang </item>
@@ -422,8 +421,8 @@
     <string name="header_tentang_aplikasi">Tentang Aplikasi</string>
     <string name="header_referensi_materi">Referensi Materi</string>
     <string name="isi_saya">Merupakan Mahasiswa Universitas Negeri Yogyakarta Program Studi Pendidikan Teknik Otomotif-S1 yang sedang berjuang menyelesaikan skripsi dengan media pembelajaran berbasis android ini.</string>
-    <string name="isi_tentang_aplikasi">PAO ( Pengenalan Alat Otomotif ) merupakan media pembelajaran berbbasis andrid untuk mata pelajaran Pekerjaan Dasar Otomotif Kelas X TSM yang berfokus pada materi Hand Tools, Power Tools, Special Service Tools, dan Workshop Equipment. Dengan adanya media ini diharapkan pengguna dapat belajar materi tersebut dimanapun dan kapanpun.</string>
-    <string name="isi_referensi_materi">Materi didalam media pembelajaran ini diambil dari buku Teknologi Dasar Otomotif untuk SMK/MAK terbitan kentrian pendidikan dan kebudayaan,  buku Teknologi Dasar Otomotif Untuk SMK dan MAK terbitan amico, dan buku Tool PMT-1 AHTC ( Astra Honda Training Center ) Pelatihan Mekanik Tingkat Satu. </string>
+    <string name="isi_tentang_aplikasi">PAO ( Pengenalan Alat Otomotif ) merupakan media pembelajaran berbasis andrid untuk mata pelajaran Pekerjaan Dasar Otomotif Kelas X TSM yang berfokus pada materi Hand Tools, Power Tools, Special Service Tools, dan Workshop Equipment. Dengan adanya media ini diharapkan pengguna dapat belajar materi tersebut dimanapun dan kapanpun.</string>
+    <string name="isi_referensi_materi">Materi didalam media pembelajaran ini diambil dari buku Teknologi Dasar Otomotif untuk SMK/MAK terbitan kementrian pendidikan dan kebudayaan,  buku Teknologi Dasar Otomotif Untuk SMK dan MAK terbitan amico, dan buku Tool PMT-1 AHTC ( Astra Honda Training Center ) Pelatihan Mekanik Tingkat Satu. </string>
 
     <!--confirm on exit-->
     <string name="dialog_exit">Apakah Anda Yakin Akan Keluar ?</string>
@@ -435,7 +434,7 @@
         <item> Circle Image View</item>
         <item> Dexter</item>
         <item>Icon yang digunakan:</item>
-        <item> designed by FreePik, Lyolya, Prosymbols, Roundicons, Eucalyp, Dryicons from Flaticon</item>
+        <item> designed by FreePik, Lyolya, Prosymbols, Roundicons, Eucalyp, Dryicons, icon Pond, monkik from Flaticon</item>
         <item> icons8</item>
     </string-array>
     <string name="library_user">Library yang digunakan\n
@@ -467,7 +466,7 @@
         <item>Menu Quiz berisi soal soal yang dapat digunakan untuk mengetahui sampai mana peserta didik memahami materi yang telah dipelajari</item>
         <item>Menu Glossarium berisi tentang istilah yang ada didalam materi</item>
         <item>Menu Tentang berisi penjelasan aplikasi dan informasi pengembang aplikasi</item>
-        <item>Menu Bantuan berisi penjelasan menu yang ada</item>
+        <item>Menu Bantuan berisi penjelasan menu yang ada\nKontak person untuk lebih lengkap dapat menghubungi 085701058308</item>
     </string-array>
 
     <color name="jawaban_benar">@android:color/holo_green_light</color>
