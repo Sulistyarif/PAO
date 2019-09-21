@@ -7,6 +7,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,6 +17,7 @@ public class BantuanActivity extends AppCompatActivity {
     ViewPagerAdapter viewPagerAdapter;
     ImageView ivBack, ivHome;
     TextView tvHeader;
+    ImageView btKiri,btKanan;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -58,8 +60,56 @@ public class BantuanActivity extends AppCompatActivity {
     }
 
     private void configWidget() {
+        btKanan = findViewById(R.id.ivNext);
+        btKiri = findViewById(R.id.ivPrev);
         viewPagerAdapter = new ViewPagerAdapter(BantuanActivity.this);
         viewPager.setAdapter(viewPagerAdapter);
+
+        btKanan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nextPage();
+            }
+        });
+
+        btKiri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                previousPage();
+            }
+        });
+    }
+
+    private void previousPage() {
+        int currentPage = viewPager.getCurrentItem();
+        int totalPages = viewPager.getAdapter().getCount();
+
+        int previousPage = currentPage-1;
+        if (previousPage < 0) {
+            // We can't go back anymore.
+            // Loop to the last page. If you don't want looping just
+            // return here.
+            previousPage = totalPages - 1;
+        }
+
+        viewPager.setCurrentItem(previousPage, true);
+
+    }
+
+    private void nextPage() {
+        int currentPage = viewPager.getCurrentItem();
+        int totalPages = viewPager.getAdapter().getCount();
+
+        int nextPage = currentPage+1;
+        if (nextPage >= totalPages) {
+            // We can't go forward anymore.
+            // Loop to the first page. If you don't want looping just
+            // return here.
+            nextPage = 0;
+        }
+
+        viewPager.setCurrentItem(nextPage, true);
+
     }
 
     private void initWidget() {
