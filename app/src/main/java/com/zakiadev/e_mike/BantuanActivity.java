@@ -62,7 +62,7 @@ public class BantuanActivity extends AppCompatActivity {
     private void configWidget() {
         btKanan = findViewById(R.id.ivNext);
         btKiri = findViewById(R.id.ivPrev);
-        viewPagerAdapter = new ViewPagerAdapter(BantuanActivity.this);
+        viewPagerAdapter = new ViewPagerAdapter(BantuanActivity.this, 6);
         viewPager.setAdapter(viewPagerAdapter);
 
         btKanan.setOnClickListener(new View.OnClickListener() {

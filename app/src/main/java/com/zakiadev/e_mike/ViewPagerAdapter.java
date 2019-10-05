@@ -14,17 +14,19 @@ public class ViewPagerAdapter extends PagerAdapter {
 
     private Context context;
     private LayoutInflater layoutInflater;
+    int jumlahMenu;
     String[] daftarMenu, deskripsiMenu;
     TextView tvMenu, tvDeskripsi;
 
 
-    public ViewPagerAdapter(Context context) {
+    public ViewPagerAdapter(Context context, int i) {
         this.context = context;
+        this.jumlahMenu = i;
     }
 
     @Override
     public int getCount() {
-        return 6;
+        return jumlahMenu;
     }
 
     @Override
@@ -36,20 +38,32 @@ public class ViewPagerAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
 
-        layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        daftarMenu = context.getResources().getStringArray(R.array.daftar_menu);
-        deskripsiMenu = context.getResources().getStringArray(R.array.deskripsi_menu);
+        if (jumlahMenu == 6){
 
-        View view = layoutInflater.inflate(R.layout.view_pager_item, null);
-        tvMenu = view.findViewById(R.id.tvVPMenu);
-        tvDeskripsi = view.findViewById(R.id.tvVPDeskripsiMenu);
+            layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            daftarMenu = context.getResources().getStringArray(R.array.daftar_menu);
+            deskripsiMenu = context.getResources().getStringArray(R.array.deskripsi_menu);
 
-        tvMenu.setText(daftarMenu[position]);
-        tvDeskripsi.setText(deskripsiMenu[position]);
+            View view = layoutInflater.inflate(R.layout.view_pager_item, null);
+            tvMenu = view.findViewById(R.id.tvVPMenu);
+            tvDeskripsi = view.findViewById(R.id.tvVPDeskripsiMenu);
 
-        ViewPager viewPager = (ViewPager) container;
-        viewPager.addView(view, 0);
-        return view;
+            tvMenu.setText(daftarMenu[position]);
+            tvDeskripsi.setText(deskripsiMenu[position]);
+
+            ViewPager viewPager = (ViewPager) container;
+            viewPager.addView(view, 0);
+            return view;
+
+        }else if (jumlahMenu == 2){
+            layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+            View view = layoutInflater.inflate(R.layout.view_pager_item, null);
+
+            return view;
+        }else {
+            return true;
+        }
     }
 
     @Override
