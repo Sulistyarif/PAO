@@ -469,7 +469,12 @@
         <item>Menu Bantuan berisi penjelasan menu yang ada\nKontak person untuk lebih lengkap dapat menghubungi 085701058308</item>
     </string-array>
 
+    <string name="asal_dosen">Dosen Pendidikan Teknik Otomotif\nFakultas Teknik\nUniversitas Negeri Yogyakarta</string>
+
     <color name="jawaban_benar">@android:color/holo_green_light</color>
     <color name="jawaban_salah">@android:color/holo_red_light</color>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
